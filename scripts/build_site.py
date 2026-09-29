@@ -1134,7 +1134,7 @@ The thing to read is the history of the revisions. Each edition leads with what 
 
 A chair gathers the news. Three philosopher personas comment. Samuel von Pufendorf speaks to sovereignty, natural law, and the duties of states. Karl Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. Socrates asks the questions that unsettle a confident forecast.
 
-The site is static. Relative links are used throughout, so the same files work on GitHub Pages at `/EU-in-10-years/` and at a domain root.
+The site is static. Links in the HTML are relative, so the pages work whether GitHub Pages serves them at `/eu-in-10-years/` or at a domain root. The path case does not matter to those links.
 
 ## Read
 
@@ -1178,7 +1178,7 @@ The script uses only the Python 3 standard library. It rewrites the HTML, `visio
 
 Serve the `main` branch root with GitHub Pages. No build workflow is required: the HTML in the repository is the site. `.nojekyll` tells Pages to serve the files as they are.
 
-The project URL is `https://arttuahola-beep.github.io/EU-in-10-years/`.
+The project URL is `https://arttuahola-beep.github.io/eu-in-10-years/`.
 """
 
 
