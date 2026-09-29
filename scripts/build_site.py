@@ -468,47 +468,36 @@ def kicker(update: Update) -> str:
     )
 
 
-def split_first_paragraph(markdown: str) -> tuple[str, str]:
-    parts = re.split(r"\n\s*\n", markdown.strip(), maxsplit=1)
-    preview = parts[0].strip()
-    rest = parts[1].strip() if len(parts) > 1 else ""
-    return preview, rest
+def revision_heading(update: Update) -> str:
+    """Lead with the one-line change. The revision name stays a label."""
+    return (
+        f"{kicker(update)}\n"
+        f'  <p class="revision-name">{html.escape(update.headline)}</p>\n'
+        f"  <h1>{inline(update.summary)}</h1>"
+    )
 
 
 def render_index(update: Update) -> str:
     changed = update.section("what changed today")
     vision = update.section("vision for")
     assert changed is not None and vision is not None
-    preview_md, rest_md = split_first_paragraph(vision.body_md)
     href = update.slug_path
-    continuation = ""
-    if rest_md:
-        continuation = f"""
-  <details class="vision-fold">
-    <summary>Show the rest of the vision</summary>
-    <div class="body">
-{indent(md_to_html(rest_md), 6)}
-    </div>
-  </details>"""
     main = f"""
 <article>
-  {kicker(update)}
-  <h1>{inline(update.headline)}</h1>
-  <p class="dek">{inline(update.summary)}</p>
+  {revision_heading(update)}
   <section class="changed" aria-labelledby="changed-heading">
     <h2 id="changed-heading">What changed today</h2>
     <div class="body">
 {indent(md_to_html(changed.body_md), 6)}
     </div>
   </section>
-  <section class="forecast" aria-labelledby="vision-heading">
-    <h2 id="vision-heading">{html.escape(vision.title)}</h2>
-    <p class="forecast-note">A short preview. The note above is the revision. The rest of the forecast is folded.</p>
-    <div class="body preview">
-{indent(md_to_html(preview_md), 6)}
+  <details class="vision-fold">
+    <summary>Vision for {html.escape(long_date(update.horizon))}</summary>
+    <div class="body">
+      <h2 id="vision-heading">{html.escape(vision.title)}</h2>
+{indent(md_to_html(vision.body_md), 6)}
     </div>
-{continuation}
-  </section>
+  </details>
   <p class="more"><a href="{href}#philosophers">Philosophers and falsifiers</a></p>
   <p class="more"><a href="archive/">Revision timeline</a></p>
 </article>
@@ -560,9 +549,7 @@ def render_update(update: Update, updates: list[Update]) -> str:
         )
     main = f"""
 <article>
-  {kicker(update)}
-  <h1>{inline(update.headline)}</h1>
-  <p class="dek">{inline(update.summary)}</p>
+  {revision_heading(update)}
   <section class="changed" aria-labelledby="what-changed-today">
     <h2 id="what-changed-today">What changed today</h2>
     <div class="body">
@@ -583,7 +570,7 @@ def render_update(update: Update, updates: list[Update]) -> str:
 {indent(pager, 2)}
 </nav>
 """
-    title = f"{update.headline} — {SITE_TITLE}"
+    title = f"{update.summary} — {SITE_TITLE}"
     description = f"{update.summary} Horizon {long_date(update.horizon)}."
     return page(title, description, 2, main)
 
@@ -780,8 +767,18 @@ header {
   line-height: 1.5;
 }
 
+.revision-name {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
 h1 {
-  margin: 0.85rem 0 0.85rem;
+  margin: 0.35rem 0 1.5rem;
   font-size: clamp(1.7rem, 4.6vw, 2.3rem);
   font-weight: 700;
   letter-spacing: -0.028em;
@@ -1160,11 +1157,11 @@ summary: One line on what changed.
 ---
 ```
 
-`summary` is the line the timeline shows. Write it as the change, not as a title for an essay.
+`summary` is the change in one line. It is the title of the day and the line the timeline shows. `headline` is the short name of the revision, shown as a label, not as the thing the reader meets first.
 
 The body uses these sections, in order:
 
-1. `## What changed today` — the primary note. Prefer a short changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a few sentences. Compare with the previous vision.
+1. `## What changed today` — the primary note. Open with a changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a short narrative. Compare with the previous vision.
 2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1200 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
@@ -1261,6 +1258,8 @@ def smoke(updates: list[Update]) -> None:
             errors.append("index does not link to the archive")
         if "What changed today" not in index or "Vision for" not in index:
             errors.append("index is missing the vision or today's note")
+        if f"<h1>{html.escape(latest.summary)}</h1>" not in index:
+            errors.append("index title should be the change summary, not the vision name")
         if index.find("What changed today") > index.find("Vision for"):
             errors.append("index should lead with what changed, before the vision")
         if "<details" not in index:

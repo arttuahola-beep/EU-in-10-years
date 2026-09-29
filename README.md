@@ -29,11 +29,11 @@ summary: One line on what changed.
 ---
 ```
 
-`summary` is the line the timeline shows. Write it as the change, not as a title for an essay.
+`summary` is the change in one line. It is the title of the day and the line the timeline shows. `headline` is the short name of the revision, shown as a label, not as the thing the reader meets first.
 
 The body uses these sections, in order:
 
-1. `## What changed today` — the primary note. Prefer a short changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a few sentences. Compare with the previous vision.
+1. `## What changed today` — the primary note. Open with a changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a short narrative. Compare with the previous vision.
 2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1200 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
