@@ -211,6 +211,11 @@ def validate_update(update: Update, path: Path) -> None:
         for name in PHILOSOPHERS:
             if name not in philosophers.body_md:
                 errors.append(f"{path}: philosophers section does not mention {name}")
+    if changed is not None and not re.search(r"(?m)^[-*] ", changed.body_md):
+        print(
+            f"warning: {path}: 'What changed today' has no bullet list of deltas",
+            file=sys.stderr,
+        )
 
     order = [section.key for section in update.sections]
     required_prefixes = ("what changed today", "vision for", "philosophers")
@@ -445,8 +450,8 @@ def page(title: str, description: str, depth: int, main: str) -> str:
 {indent(main, 6)}
     </main>
     <footer>
-      <p>The horizon is the publication date plus ten years. The chair revises the vision on weekdays; Pufendorf, Popper, and Socrates comment.</p>
-      <p>A forecast, not a promise.</p>
+      <p>A weekday record of how the ten-year forecast moves. The horizon is the publication date plus ten years.</p>
+      <p>Pufendorf, Popper, and Socrates comment. A forecast, not a promise.</p>
     </footer>
   </div>
 </body>
@@ -463,11 +468,28 @@ def kicker(update: Update) -> str:
     )
 
 
+def split_first_paragraph(markdown: str) -> tuple[str, str]:
+    parts = re.split(r"\n\s*\n", markdown.strip(), maxsplit=1)
+    preview = parts[0].strip()
+    rest = parts[1].strip() if len(parts) > 1 else ""
+    return preview, rest
+
+
 def render_index(update: Update) -> str:
     changed = update.section("what changed today")
     vision = update.section("vision for")
     assert changed is not None and vision is not None
+    preview_md, rest_md = split_first_paragraph(vision.body_md)
     href = update.slug_path
+    continuation = ""
+    if rest_md:
+        continuation = f"""
+  <details class="vision-fold">
+    <summary>Show the rest of the vision</summary>
+    <div class="body">
+{indent(md_to_html(rest_md), 6)}
+    </div>
+  </details>"""
     main = f"""
 <article>
   {kicker(update)}
@@ -479,14 +501,16 @@ def render_index(update: Update) -> str:
 {indent(md_to_html(changed.body_md), 6)}
     </div>
   </section>
-  <section class="vision" aria-labelledby="vision-heading">
+  <section class="forecast" aria-labelledby="vision-heading">
     <h2 id="vision-heading">{html.escape(vision.title)}</h2>
-    <div class="body">
-{indent(md_to_html(vision.body_md), 6)}
+    <p class="forecast-note">A short preview. The note above is the revision. The rest of the forecast is folded.</p>
+    <div class="body preview">
+{indent(md_to_html(preview_md), 6)}
     </div>
+{continuation}
   </section>
   <p class="more"><a href="{href}#philosophers">Philosophers and falsifiers</a></p>
-  <p class="more"><a href="archive/">Archive</a></p>
+  <p class="more"><a href="archive/">Revision timeline</a></p>
 </article>
 """
     description = f"{update.summary} Horizon {long_date(update.horizon)}."
@@ -513,17 +537,46 @@ def render_update(update: Update, updates: list[Update]) -> str:
             f'<span class="pager-title">{html.escape(newer.headline)}</span>'
             "</a>"
         )
-    pager_parts.append('<a class="pager-home" href="../../archive/">Archive</a>')
-    pager_parts.append('<a class="pager-home" href="../../index.html">Latest vision</a>')
+    pager_parts.append('<a class="pager-home" href="../../archive/">Revision timeline</a>')
+    pager_parts.append('<a class="pager-home" href="../../index.html">Latest revision</a>')
     pager = "\n".join(pager_parts)
+    changed = update.section("what changed today")
+    vision = update.section("vision for")
+    assert changed is not None and vision is not None
+    later_sections = [
+        section
+        for section in update.sections
+        if section is not changed and section is not vision
+    ]
+    later_html = []
+    for section in later_sections:
+        later_html.append(
+            f'<section class="commentary">\n'
+            f'  <h2 id="{slugify(section.title)}">{html.escape(section.title)}</h2>\n'
+            f'  <div class="body">\n'
+            f'{indent(md_to_html(section.body_md), 4)}\n'
+            f'  </div>\n'
+            f'</section>'
+        )
     main = f"""
 <article>
   {kicker(update)}
   <h1>{inline(update.headline)}</h1>
   <p class="dek">{inline(update.summary)}</p>
-  <div class="body">
-{indent(md_to_html(update.body_md), 4)}
-  </div>
+  <section class="changed" aria-labelledby="what-changed-today">
+    <h2 id="what-changed-today">What changed today</h2>
+    <div class="body">
+{indent(md_to_html(changed.body_md), 6)}
+    </div>
+  </section>
+  <details class="vision-fold">
+    <summary>Show the full vision</summary>
+    <div class="body">
+      <h2 id="{slugify(vision.title)}">{html.escape(vision.title)}</h2>
+{indent(md_to_html(vision.body_md), 6)}
+    </div>
+  </details>
+{indent(chr(10).join(later_html), 2)}
   <p class="source"><a href="update.md">Markdown source</a></p>
 </article>
 <nav class="pager" aria-label="Other revisions">
@@ -545,21 +598,22 @@ def render_archive(updates: list[Update]) -> str:
             f'<time datetime="{update.published.isoformat()}">{html.escape(long_date(update.published))}</time> '
             f'<span class="pill">Horizon {update.horizon.year}</span>'
             "</span>\n"
-            f'    <span class="item-title">{html.escape(update.headline)}</span>\n'
-            f'    <span class="item-summary">{html.escape(update.summary)}</span>\n'
+            '    <span class="change-label">What changed</span>\n'
+            f'    <span class="item-title">{html.escape(update.summary)}</span>\n'
+            f'    <span class="item-name">{html.escape(update.headline)}</span>\n'
             "  </a>\n"
             "</li>"
         )
     main = f"""
-<h1>Archive</h1>
-<p class="dek">Every published revision, newest first. Each horizon is ten years after that day's date.</p>
+<h1>Revisions</h1>
+<p class="dek">A timeline of how the forecast moved, newest first. Each row is a change, not a separate essay. The horizon is ten years after that day's date.</p>
 <ul class="takeaways">
 {indent(chr(10).join(items), 2)}
 </ul>
 """
     return page(
-        f"Archive — {SITE_TITLE}",
-        "Every revision of the ten-year forecast, newest first.",
+        f"Revisions — {SITE_TITLE}",
+        "A timeline of how the ten-year forecast changed, newest first.",
         1,
         main,
     )
@@ -569,7 +623,7 @@ def render_404() -> str:
     main = """
 <h1>Page not found</h1>
 <p class="dek">That page is not part of the forecast.</p>
-<p class="more"><a href="index.html">Latest vision</a></p>
+<p class="more"><a href="index.html">Latest revision</a></p>
 """
     return page(f"Page not found — {SITE_TITLE}", TAGLINE, 0, main)
 
@@ -782,8 +836,9 @@ time {
 }
 
 .changed,
-.vision {
-  margin: 0 0 2.75rem;
+.forecast,
+.commentary {
+  margin: 0 0 2.5rem;
 }
 
 .changed {
@@ -792,8 +847,38 @@ time {
 }
 
 .changed .body,
-.vision .body {
+.forecast .body,
+.commentary .body {
   margin-top: 0.85rem;
+}
+
+.forecast-note {
+  margin: 0.35rem 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.vision-fold {
+  margin: 0.35rem 0 1.5rem;
+}
+
+.vision-fold summary {
+  display: inline-block;
+  padding: 0.15rem 0;
+  color: var(--accent);
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.vision-fold summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.vision-fold .body {
+  margin-top: 1.15rem;
 }
 
 .body {
@@ -914,17 +999,26 @@ strong {
   gap: 0.4rem 0.6rem;
 }
 
+.change-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
 .item-title {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.35;
 }
 
-.item-summary {
+.item-name {
   color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.45;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .takeaways a:hover .item-title,
@@ -1037,19 +1131,21 @@ FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="i
 
 README = """# EU in 10 years
 
-A rolling ten-year forecast of the European Union, revised on weekdays. The horizon is the publication date plus ten years. It is never a fixed year.
+A weekday record of how a ten-year forecast of the European Union changes. The horizon is the publication date plus ten years. It is never a fixed year. The site is in English.
 
-A chair gathers the news and publishes two things: the updated vision, and a short note on what changed that day. Three philosopher personas comment. Samuel von Pufendorf speaks to sovereignty, natural law, and the duties of states. Karl Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. Socrates asks the questions that unsettle a confident forecast.
+The thing to read is the history of the revisions. Each edition leads with what moved that day. The full vision is the living text those notes revise. It is kept, and it is not the front page.
+
+A chair gathers the news. Three philosopher personas comment. Samuel von Pufendorf speaks to sovereignty, natural law, and the duties of states. Karl Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. Socrates asks the questions that unsettle a confident forecast.
 
 The site is static. Relative links are used throughout, so the same files work on GitHub Pages at `/EU-in-10-years/` and at a domain root.
 
 ## Read
 
-- `index.html` — the latest vision, what changed today, and a link to the archive
-- `archive/index.html` — every revision, newest first
-- `updates/YYYY-MM-DD/index.html` — that day's full note
+- `index.html` — what changed today, then a short preview of the vision, then the revision timeline
+- `archive/index.html` — every revision, newest first, listed by the change
+- `updates/YYYY-MM-DD/index.html` — that day's change, with the full vision folded underneath
 - `updates/updates.json` — the same list, for anything that wants data rather than HTML
-- `vision/current.md` — the latest vision, regenerated from the newest update
+- `vision/current.md` — the latest full vision, regenerated from the newest update
 
 ## Add a weekday update
 
@@ -1059,15 +1155,17 @@ Create `updates/YYYY-MM-DD/update.md`. The folder name and the `date` field must
 ---
 date: 2026-09-30
 horizon: 2036-09-30
-headline: Short title
+headline: Short title of the revision
 summary: One line on what changed.
 ---
 ```
 
+`summary` is the line the timeline shows. Write it as the change, not as a title for an essay.
+
 The body uses these sections, in order:
 
-1. `## What changed today` — the chair's note to the reader
-2. `## Vision for YYYY` — the living forecast, about 600 to 1200 words, naming the horizon year
+1. `## What changed today` — the primary note. Prefer a short changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a few sentences. Compare with the previous vision.
+2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1200 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
 
@@ -1163,10 +1261,16 @@ def smoke(updates: list[Update]) -> None:
             errors.append("index does not link to the archive")
         if "What changed today" not in index or "Vision for" not in index:
             errors.append("index is missing the vision or today's note")
+        if index.find("What changed today") > index.find("Vision for"):
+            errors.append("index should lead with what changed, before the vision")
+        if "<details" not in index:
+            errors.append("index should fold the rest of the vision")
         if "Sovereignty is a duty before it is a licence." in index:
             errors.append("index should not repeat the philosopher excerpts")
         if f'href="../{latest.slug_path}"' not in archive:
             errors.append("archive does not link to the latest update")
+        if f'<span class="item-title">{html.escape(latest.summary)}</span>' not in archive:
+            errors.append("archive should lead each row with the change summary")
         if 'href="../../index.html"' not in update_html:
             errors.append("update page does not link home")
         if 'href="../../archive/"' not in update_html:

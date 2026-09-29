@@ -7,9 +7,13 @@ summary: Opening baseline for 2036, published before the first weekday news cycl
 
 ## What changed today
 
-This note opens the series. There is no earlier vision to revise, and no weekday news cycle behind it. The text that follows is a baseline picture of the European Union on 29 September 2036, ten years from this publication date.
+This is the opening baseline. There is no earlier forecast, so nothing below was revised, strengthened, or weakened against a previous text. No weekday news has been folded in. From the next weekday, this section will list the movement.
 
-Nothing in today's news has been folded in. Later editions will say what moved, what held, and what the chair no longer believes. That work starts on the next weekday.
+- **Set down.** A first picture of the Union on 29 September 2036, ten years from this date. It covers institutions and enlargement, the economy and technology, defence and Ukraine, climate and energy, the rule of law, and relations with the United States, China, and the neighbourhood.
+- **Left open.** Whether any accession is completed by then, how the war ends, and whether a larger Union changes its voting rules. The baseline does not close these.
+- **Not in this edition.** Any claim that would depend on a day's news. Later notes will say what moved, what held, and what the chair no longer believes.
+
+The vision that follows is the text those later notes will revise. It is the forecast. This note is the record of how that forecast starts.
 
 ## Vision for 2036
 
