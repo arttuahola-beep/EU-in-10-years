@@ -1,10 +1,18 @@
 ---
 date: 2026-09-30
 horizon: 2036-09-30
-headline: "Enlargement architecture draft"
-summary: "Commission draft for a larger Union strengthens the non-treaty path on voting and accession safeguards; delivery by capitals still open."
-source: updates/2026-09-30/update.md
+headline: Enlargement architecture draft
+summary: Commission draft for a larger Union strengthens the non-treaty path on voting and accession safeguards; delivery by capitals still open.
 ---
+
+## What changed today
+
+- **Strengthened.** The path in which most institutional change comes through secondary law, bridging clauses, and accession treaties — not a ratified rewrite of the Lisbon skeleton — looks more concrete. A Commission draft on preparing for a bigger Union (reported 29 September) pitches temporary political commitments by new members not to block consensus, post-accession safeguards that could suspend rights by qualified majority, time-limited brakes on free movement and agriculture, and wider use of qualified-majority voting on sanctions. Gradual integration into defence, energy, and transport programmes before formal membership is treated as normal rather than exceptional.
+- **Revised.** Enlargement is no longer only an open queue with vague brakes. The frontrunners named in recent reporting — Montenegro, Albania, Ukraine, and Moldova — are being offered roadmaps with indicative negotiation timelines, while pre-enlargement policy reviews of budget, agriculture, cohesion, and decision-making have slipped to early October. The baseline still does not pick which accessions complete by 2036. It now expects any completed accession to arrive with asymmetric conditionality and a longer probationary politics than the 2004–07 enlargements.
+- **Left uncertain.** Whether governments will accept wider qualified-majority voting or the proposed safeguards. The draft itself notes that moving off unanimity needs unanimous agreement and safety valves for essential national interests. Hungary’s recent change of government eases one familiar veto story; it does not settle the rest.
+- **Not moved.** Defence posture shaped by the war, the AI Act outline, climate targets, and the United States–China–neighbourhood picture are unchanged against yesterday’s text. No weekday development forced a rewrite there.
+
+The Commission package is still expected next week and may still change. Today’s revision is about design and signal, not about a decision already taken by the Council.
 
 ## Vision for 2036
 
@@ -59,3 +67,19 @@ In 2036 the Union is a regulatory power, a large market, and a regional security
 ### How to read this revision
 
 Each claim can be kept, narrowed, or dropped by a later weekday edition. If the page starts to sound like fate, it has failed.
+
+## Philosophers
+
+- **Samuel von Pufendorf.** A union that enlarges without duties of trust — courts that bind, covenants that hold, and voting rules that cannot be turned into perpetual hostage-taking — confuses size with order. Probationary safeguards can be instruments of that duty if they protect people and the integrity of common decisions. They become licence if they are only a way for older members to keep the market while denying equal standing. Judge the package by whether it makes sovereignty answerable, not by how neatly it sidesteps a treaty fight.
+
+- **Karl Popper.** Treat the Commission draft as a conjecture about how to enlarge without locking in veto paralysis. Prefer piecemeal tests — a passerelle that works, a safeguard that is used sparingly and reviewed — to any story that Europe has already chosen its 2036 constitution. The useful question is what evidence would show the design has failed: a new member silenced into second-class status, or a Union still blocked on sanctions by a single capital. Keep the forecast open to both refutations.
+
+- **Socrates.** Who must agree before this “radical” overhaul is real, and have they agreed? If the answer is still “the Commission proposes,” what exactly has changed in the vision beyond a hope? Whose veto does the temporary commitment remove, and whose does it protect? If you cannot say, the sentence about a more capable larger Union is still a wish.
+
+## Falsifiers
+
+- Formal presentation and Council rejection of the main decision-making and safeguard proposals, leaving unanimity and accession practice unchanged.
+- Ratification of a treaty rewrite that settles voting and fiscal questions the draft tried to dodge.
+- Completion of several large accessions without meaningful probationary conditionality, or indefinite closure of the Ukraine and Western Balkan tracks despite roadmaps.
+- A lasting break in the United States security role in Europe, or a return to European defence budgets and industry at the thin levels of the early 2020s.
+- Evidence that AI has produced a broad European productivity shift, or that the AI Act’s structure has been abandoned in practice.

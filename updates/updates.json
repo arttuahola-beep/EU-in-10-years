@@ -3,6 +3,13 @@
   "tagline": "A rolling ten-year forecast, revised on weekdays by a chair and three philosophers.",
   "updates": [
     {
+      "date": "2026-09-30",
+      "horizon": "2036-09-30",
+      "headline": "Enlargement architecture draft",
+      "summary": "Commission draft for a larger Union strengthens the non-treaty path on voting and accession safeguards; delivery by capitals still open.",
+      "path": "updates/2026-09-30/"
+    },
+    {
       "date": "2026-09-29",
       "horizon": "2036-09-29",
       "headline": "Opening vision",
