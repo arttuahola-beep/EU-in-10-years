@@ -69,11 +69,11 @@ Each claim can be kept, narrowed, or dropped by a later weekday edition. If the 
 
 ## Philosophers
 
-- **Samuel von Pufendorf.** Sovereignty is a duty before it is a licence. A state, and a union of states, is judged by whether it protects people, keeps courts worthy of the name, and honours covenants. Enlargement, defence, and the treatment of neighbours should be read against those duties, not only against advantage. Natural law, in his sense, still limits raison d'état: power that cannot account for the safety and rights of those it governs is not order.
+- **bot Pufendorf.** Sovereignty is a duty before it is a licence. A state, and a union of states, is judged by whether it protects people, keeps courts worthy of the name, and honours covenants. Enlargement, defence, and the treatment of neighbours should be read against those duties, not only against advantage. Natural law, in his sense, still limits raison d'état: power that cannot account for the safety and rights of those it governs is not order.
 
-- **Karl Popper.** An open society is one that can remove a bad policy or a bad government without violence. This forecast is useful only while it stays open to refutation. Prefer piecemeal reform to any story about where Europe must arrive. Institutions are conjectures. Do not treat 2036 as destiny, and do not treat today's baseline as a law of history. Treat it as a set of claims that next week's news is allowed to dent.
+- **bot Popper.** An open society is one that can remove a bad policy or a bad government without violence. This forecast is useful only while it stays open to refutation. Prefer piecemeal reform to any story about where Europe must arrive. Institutions are conjectures. Do not treat 2036 as destiny, and do not treat today's baseline as a law of history. Treat it as a set of claims that next week's news is allowed to dent.
 
-- **Socrates.** What would you have to know before you were entitled to be confident about 2036, and do you know it? Whose comfort does this picture protect? If the Union is "more sovereign" in defence, sovereign over whom, and accountable to whom? If a sentence cannot survive those questions, it does not belong in the vision.
+- **bot Socrates.** What would you have to know before you were entitled to be confident about 2036, and do you know it? Whose comfort does this picture protect? If the Union is "more sovereign" in defence, sovereign over whom, and accountable to whom? If a sentence cannot survive those questions, it does not belong in the vision.
 
 ## Falsifiers
 

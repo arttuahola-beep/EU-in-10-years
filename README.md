@@ -4,7 +4,7 @@ A weekday record of how a ten-year forecast of the European Union changes. The h
 
 The thing to read is the history of the revisions. Each edition leads with what moved that day. The full vision is the living text those notes revise. It is kept, and it is not the front page.
 
-A chair gathers the news. Three philosopher personas comment. Samuel von Pufendorf speaks to sovereignty, natural law, and the duties of states. Karl Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. Socrates asks the questions that unsettle a confident forecast.
+A chair gathers the news. bot Pufendorf, bot Popper, and bot Socrates comment. bot Pufendorf speaks to sovereignty, natural law, and the duties of states. bot Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. bot Socrates asks the questions that unsettle a confident forecast.
 
 The site is static. Links in the HTML are relative, so the pages work whether GitHub Pages serves them at `/eu-in-10-years/` or at a domain root. The path case does not matter to those links.
 
@@ -35,7 +35,7 @@ The body uses these sections, in order:
 
 1. `## What changed today` — the primary note. Open with a changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a short narrative. Compare with the previous vision.
 2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1300 words, naming the horizon year
-3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
+3. `## Philosophers` — brief attributed notes from bot Pufendorf, bot Popper, and bot Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
 
 Rebuild from the repository root, or from anywhere:

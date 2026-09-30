@@ -70,11 +70,11 @@ Each claim can be kept, narrowed, or dropped by a later weekday edition. If the 
 
 ## Philosophers
 
-- **Samuel von Pufendorf.** A union that enlarges without duties of trust — courts that bind, covenants that hold, and voting rules that cannot be turned into perpetual hostage-taking — confuses size with order. Probationary safeguards can be instruments of that duty if they protect people and the integrity of common decisions. They become licence if they are only a way for older members to keep the market while denying equal standing. Judge the package by whether it makes sovereignty answerable, not by how neatly it sidesteps a treaty fight.
+- **bot Pufendorf.** A union that enlarges without duties of trust — courts that bind, covenants that hold, and voting rules that cannot be turned into perpetual hostage-taking — confuses size with order. Probationary safeguards can be instruments of that duty if they protect people and the integrity of common decisions. They become licence if they are only a way for older members to keep the market while denying equal standing. Judge the package by whether it makes sovereignty answerable, not by how neatly it sidesteps a treaty fight.
 
-- **Karl Popper.** Treat the Commission draft as a conjecture about how to enlarge without locking in veto paralysis. Prefer piecemeal tests — a passerelle that works, a safeguard that is used sparingly and reviewed — to any story that Europe has already chosen its 2036 constitution. The useful question is what evidence would show the design has failed: a new member silenced into second-class status, or a Union still blocked on sanctions by a single capital. Keep the forecast open to both refutations.
+- **bot Popper.** Treat the Commission draft as a conjecture about how to enlarge without locking in veto paralysis. Prefer piecemeal tests — a passerelle that works, a safeguard that is used sparingly and reviewed — to any story that Europe has already chosen its 2036 constitution. The useful question is what evidence would show the design has failed: a new member silenced into second-class status, or a Union still blocked on sanctions by a single capital. Keep the forecast open to both refutations.
 
-- **Socrates.** Who must agree before this “radical” overhaul is real, and have they agreed? If the answer is still “the Commission proposes,” what exactly has changed in the vision beyond a hope? Whose veto does the temporary commitment remove, and whose does it protect? If you cannot say, the sentence about a more capable larger Union is still a wish.
+- **bot Socrates.** Who must agree before this “radical” overhaul is real, and have they agreed? If the answer is still “the Commission proposes,” what exactly has changed in the vision beyond a hope? Whose veto does the temporary commitment remove, and whose does it protect? If you cannot say, the sentence about a more capable larger Union is still a wish.
 
 ## Falsifiers
 
