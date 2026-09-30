@@ -34,7 +34,7 @@ summary: One line on what changed.
 The body uses these sections, in order:
 
 1. `## What changed today` — the primary note. Open with a changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a short narrative. Compare with the previous vision.
-2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1200 words, naming the horizon year
+2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1300 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
 

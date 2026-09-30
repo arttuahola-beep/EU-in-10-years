@@ -24,7 +24,7 @@ TAGLINE = (
     "A rolling ten-year forecast, revised on weekdays by a chair and three philosophers."
 )
 VISION_WORDS_MIN = 600
-VISION_WORDS_MAX = 1200
+VISION_WORDS_MAX = 1300
 PHILOSOPHERS = ("Pufendorf", "Popper", "Socrates")
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -1162,7 +1162,7 @@ summary: One line on what changed.
 The body uses these sections, in order:
 
 1. `## What changed today` — the primary note. Open with a changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a short narrative. Compare with the previous vision.
-2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1200 words, naming the horizon year
+2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1300 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
 
@@ -1264,7 +1264,24 @@ def smoke(updates: list[Update]) -> None:
             errors.append("index should lead with what changed, before the vision")
         if "<details" not in index:
             errors.append("index should fold the rest of the vision")
-        if "Sovereignty is a duty before it is a licence." in index:
+        vision_section = latest.section("vision for")
+        assert vision_section is not None
+        vision_lead = next(
+            (line.strip() for line in vision_section.body_md.splitlines() if line.strip()),
+            "",
+        )
+        philosophers = latest.section("philosophers")
+        pufendorf_sentence = ""
+        if philosophers is not None:
+            for line in philosophers.body_md.splitlines():
+                if "Pufendorf" not in line:
+                    continue
+                prose = re.sub(r"^[-*\s]*\*\*[^*]+\*\*\s*", "", line).strip()
+                pufendorf_sentence = prose.split(". ", 1)[0].strip()
+                if pufendorf_sentence and not pufendorf_sentence.endswith("."):
+                    pufendorf_sentence += "."
+                break
+        if pufendorf_sentence and pufendorf_sentence in index:
             errors.append("index should not repeat the philosopher excerpts")
         if f'href="../{latest.slug_path}"' not in archive:
             errors.append("archive does not link to the latest update")
@@ -1274,12 +1291,12 @@ def smoke(updates: list[Update]) -> None:
             errors.append("update page does not link home")
         if 'href="../../archive/"' not in update_html:
             errors.append("update page does not link to the archive")
-        if "Sovereignty is a duty before it is a licence." not in update_html:
+        if not pufendorf_sentence or pufendorf_sentence not in update_html:
             errors.append("update page is missing the Pufendorf note")
         vision_text = (ROOT / "vision" / "current.md").read_text(encoding="utf-8")
-        if "This is a baseline, not a prophecy." not in vision_text:
+        if not vision_lead or vision_lead not in vision_text:
             errors.append("vision/current.md does not hold the latest vision")
-        if "This is a baseline, not a prophecy." not in index:
+        if not vision_lead or vision_lead not in index:
             errors.append("index does not show the latest vision")
         data = json.loads((UPDATES_DIR / "updates.json").read_text(encoding="utf-8"))
         if data["updates"][0]["date"] != latest.published.isoformat():
