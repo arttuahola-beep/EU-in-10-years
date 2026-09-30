@@ -21,11 +21,12 @@ UPDATES_DIR = ROOT / "updates"
 
 SITE_TITLE = "EU in 10 years"
 TAGLINE = (
-    "A rolling ten-year forecast, revised on weekdays by a chair and three philosophers."
+    "A rolling ten-year forecast, revised on weekdays by a chair, "
+    "bot Pufendorf, bot Popper, and bot Socrates."
 )
 VISION_WORDS_MIN = 600
 VISION_WORDS_MAX = 1300
-PHILOSOPHERS = ("Pufendorf", "Popper", "Socrates")
+PHILOSOPHERS = ("bot Pufendorf", "bot Popper", "bot Socrates")
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
@@ -451,7 +452,7 @@ def page(title: str, description: str, depth: int, main: str) -> str:
     </main>
     <footer>
       <p>A weekday record of how the ten-year forecast moves. The horizon is the publication date plus ten years.</p>
-      <p>Pufendorf, Popper, and Socrates comment. A forecast, not a promise.</p>
+      <p>bot Pufendorf, bot Popper, and bot Socrates comment. A forecast, not a promise.</p>
     </footer>
   </div>
 </body>
@@ -1132,7 +1133,7 @@ A weekday record of how a ten-year forecast of the European Union changes. The h
 
 The thing to read is the history of the revisions. Each edition leads with what moved that day. The full vision is the living text those notes revise. It is kept, and it is not the front page.
 
-A chair gathers the news. Three philosopher personas comment. Samuel von Pufendorf speaks to sovereignty, natural law, and the duties of states. Karl Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. Socrates asks the questions that unsettle a confident forecast.
+A chair gathers the news. bot Pufendorf, bot Popper, and bot Socrates comment. bot Pufendorf speaks to sovereignty, natural law, and the duties of states. bot Popper speaks to the open society, piecemeal reform, and the refusal to treat history as a script. bot Socrates asks the questions that unsettle a confident forecast.
 
 The site is static. Links in the HTML are relative, so the pages work whether GitHub Pages serves them at `/eu-in-10-years/` or at a domain root. The path case does not matter to those links.
 
@@ -1163,7 +1164,7 @@ The body uses these sections, in order:
 
 1. `## What changed today` — the primary note. Open with a changelog of bullets (what was revised, strengthened, weakened, or newly uncertain), then a short narrative. Compare with the previous vision.
 2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1300 words, naming the horizon year
-3. `## Philosophers` — brief attributed notes from Pufendorf, Popper, and Socrates
+3. `## Philosophers` — brief attributed notes from bot Pufendorf, bot Popper, and bot Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
 
 Rebuild from the repository root, or from anywhere:
@@ -1274,7 +1275,7 @@ def smoke(updates: list[Update]) -> None:
         pufendorf_sentence = ""
         if philosophers is not None:
             for line in philosophers.body_md.splitlines():
-                if "Pufendorf" not in line:
+                if "bot Pufendorf" not in line:
                     continue
                 prose = re.sub(r"^[-*\s]*\*\*[^*]+\*\*\s*", "", line).strip()
                 pufendorf_sentence = prose.split(". ", 1)[0].strip()
@@ -1282,7 +1283,7 @@ def smoke(updates: list[Update]) -> None:
                     pufendorf_sentence += "."
                 break
         if pufendorf_sentence and pufendorf_sentence in index:
-            errors.append("index should not repeat the philosopher excerpts")
+            errors.append("index should not repeat the bot excerpts")
         if f'href="../{latest.slug_path}"' not in archive:
             errors.append("archive does not link to the latest update")
         if f'<span class="item-title">{html.escape(latest.summary)}</span>' not in archive:
@@ -1292,7 +1293,7 @@ def smoke(updates: list[Update]) -> None:
         if 'href="../../archive/"' not in update_html:
             errors.append("update page does not link to the archive")
         if not pufendorf_sentence or pufendorf_sentence not in update_html:
-            errors.append("update page is missing the Pufendorf note")
+            errors.append("update page is missing the bot Pufendorf note")
         vision_text = (ROOT / "vision" / "current.md").read_text(encoding="utf-8")
         if not vision_lead or vision_lead not in vision_text:
             errors.append("vision/current.md does not hold the latest vision")
