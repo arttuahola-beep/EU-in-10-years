@@ -27,6 +27,27 @@ TAGLINE = (
 VISION_WORDS_MIN = 600
 VISION_WORDS_MAX = 1300
 PHILOSOPHERS = ("bot Pufendorf", "bot Popper", "bot Socrates")
+# Editions before this date stay without the section. From this date it is required.
+SOCIETY_REQUIRED_FROM = date(2026, 10, 2)
+SOCIETY_TITLE = "Society in ten points"
+SOCIETY_INTRO = (
+    "A compact picture of European Union society at the horizon. "
+    "The ten labels stay fixed. Rewrite a line only when the vision itself "
+    "has a material social change — not when the day’s news only deepens "
+    "an already-named path."
+)
+SOCIETY_LABELS = (
+    "Form of government",
+    "Social trust",
+    "Type of economy",
+    "Freedom of speech and press",
+    "Rule of law",
+    "Political competition",
+    "Civil society",
+    "Demography and social fabric",
+    "Information and surveillance",
+    "Security apparatus in society",
+)
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
@@ -183,6 +204,79 @@ def parse_update(folder: Path) -> Update:
     return update
 
 
+def society_required(published: date) -> bool:
+    return published >= SOCIETY_REQUIRED_FROM
+
+
+def society_labels(body: str) -> list[str]:
+    labels: list[str] = []
+    for item in re.findall(r"(?m)^\s*\d+\.\s+(.*\S)\s*$", body):
+        match = re.match(r"\*\*(.+?)\*\*", item)
+        labels.append(match.group(1).strip() if match else item.strip())
+    return labels
+
+
+def society_section(update: Update) -> Section | None:
+    for section in update.sections:
+        if section.key == SOCIETY_TITLE.lower():
+            return section
+    return None
+
+
+def society_body(labels: list[str] | None = None) -> str:
+    chosen = list(SOCIETY_LABELS) if labels is None else labels
+    items = [f"{index}. **{label}** — line." for index, label in enumerate(chosen, start=1)]
+    return SOCIETY_INTRO + "\n\n" + "\n".join(items) + "\n"
+
+
+def society_problems(update: Update, path: Path) -> list[str]:
+    """Label, count, and placement rules. Presence is required only from the cutoff."""
+    errors: list[str] = []
+    society = update.section(SOCIETY_TITLE.lower())
+    exact = society is not None and society.key == SOCIETY_TITLE.lower()
+    if society_required(update.published):
+        if not exact:
+            errors.append(f"{path}: missing section '{SOCIETY_TITLE}'")
+        else:
+            labels = society_labels(society.body_md)
+            if labels != list(SOCIETY_LABELS):
+                found = "; ".join(labels) if labels else "(none)"
+                errors.append(
+                    f"{path}: '{SOCIETY_TITLE}' must contain exactly these 10 bold labels "
+                    f"in order ({'; '.join(SOCIETY_LABELS)}); found {len(labels)}: {found}"
+                )
+    elif exact:
+        labels = society_labels(society.body_md)
+        if labels != list(SOCIETY_LABELS):
+            found = "; ".join(labels) if labels else "(none)"
+            errors.append(
+                f"{path}: '{SOCIETY_TITLE}' must contain exactly these 10 bold labels "
+                f"in order ({'; '.join(SOCIETY_LABELS)}); found {len(labels)}: {found}"
+            )
+
+    order = [section.key for section in update.sections]
+    society_at = next(
+        (i for i, key in enumerate(order) if key == SOCIETY_TITLE.lower()), None
+    )
+    philosophers_at = next(
+        (i for i, key in enumerate(order) if key.startswith("philosophers")), None
+    )
+    falsifiers_at = next(
+        (i for i, key in enumerate(order) if key.startswith("falsifiers")), None
+    )
+    if (
+        society_at is not None
+        and philosophers_at is not None
+        and society_at < philosophers_at
+    ):
+        errors.append(f"{path}: Society in ten points must follow Philosophers")
+    if falsifiers_at is not None and society_at is not None and society_at < falsifiers_at:
+        errors.append(f"{path}: Society in ten points must follow Falsifiers")
+    if society_at is not None and society_at != len(order) - 1:
+        errors.append(f"{path}: Society in ten points must be the last section")
+    return errors
+
+
 def validate_update(update: Update, path: Path) -> None:
     errors: list[str] = []
     changed = update.section("what changed today")
@@ -217,19 +311,28 @@ def validate_update(update: Update, path: Path) -> None:
             f"warning: {path}: 'What changed today' has no bullet list of deltas",
             file=sys.stderr,
         )
+    errors.extend(society_problems(update, path))
 
     order = [section.key for section in update.sections]
-    required_prefixes = ("what changed today", "vision for", "philosophers")
+    required_prefixes = ["what changed today", "vision for", "philosophers"]
+    if society_required(update.published):
+        required_prefixes.append(SOCIETY_TITLE.lower())
     positions = []
     for prefix in required_prefixes:
         found = next((i for i, key in enumerate(order) if key.startswith(prefix)), None)
         if found is not None:
             positions.append(found)
     if positions != sorted(positions):
-        errors.append(
-            f"{path}: sections must run What changed today, Vision, Philosophers, "
-            "then optional Falsifiers"
-        )
+        if society_required(update.published):
+            errors.append(
+                f"{path}: sections must run What changed today, Vision, Philosophers, "
+                "optional Falsifiers, then Society in ten points"
+            )
+        else:
+            errors.append(
+                f"{path}: sections must run What changed today, Vision, Philosophers, "
+                "then optional Falsifiers"
+            )
     falsifiers_at = next((i for i, key in enumerate(order) if key.startswith("falsifiers")), None)
     philosophers_at = next(
         (i for i, key in enumerate(order) if key.startswith("philosophers")), None
@@ -478,10 +581,25 @@ def revision_heading(update: Update) -> str:
     )
 
 
+def render_society(section: Section) -> str:
+    return (
+        '<section class="commentary society-points" aria-labelledby="society-in-ten-points">\n'
+        f'  <h2 id="society-in-ten-points">{html.escape(SOCIETY_TITLE)}</h2>\n'
+        '  <div class="body">\n'
+        f"{indent(md_to_html(section.body_md), 4)}\n"
+        "  </div>\n"
+        "</section>"
+    )
+
+
 def render_index(update: Update) -> str:
     changed = update.section("what changed today")
     vision = update.section("vision for")
     assert changed is not None and vision is not None
+    society = society_section(update)
+    society_html = ""
+    if society is not None:
+        society_html = indent(render_society(society), 2) + "\n"
     href = update.slug_path
     main = f"""
 <article>
@@ -499,7 +617,7 @@ def render_index(update: Update) -> str:
 {indent(md_to_html(vision.body_md), 6)}
     </div>
   </details>
-  <p class="more"><a href="{href}#philosophers">Philosophers and falsifiers</a></p>
+{society_html}  <p class="more"><a href="{href}#philosophers">Philosophers and falsifiers</a></p>
   <p class="more"><a href="archive/">Revision timeline</a></p>
 </article>
 """
@@ -540,8 +658,11 @@ def render_update(update: Update, updates: list[Update]) -> str:
     ]
     later_html = []
     for section in later_sections:
+        classes = "commentary"
+        if section.key == SOCIETY_TITLE.lower():
+            classes = "commentary society-points"
         later_html.append(
-            f'<section class="commentary">\n'
+            f'<section class="{classes}">\n'
             f'  <h2 id="{slugify(section.title)}">{html.escape(section.title)}</h2>\n'
             f'  <div class="body">\n'
             f'{indent(md_to_html(section.body_md), 4)}\n'
@@ -835,7 +956,8 @@ time {
 
 .changed,
 .forecast,
-.commentary {
+.commentary,
+.society-points {
   margin: 0 0 2.5rem;
 }
 
@@ -846,7 +968,8 @@ time {
 
 .changed .body,
 .forecast .body,
-.commentary .body {
+.commentary .body,
+.society-points .body {
   margin-top: 0.85rem;
 }
 
@@ -934,6 +1057,10 @@ time {
 
 .body li::marker {
   color: var(--accent);
+}
+
+.society-points .body li {
+  margin: 0.7rem 0;
 }
 
 .body blockquote {
@@ -1139,11 +1266,12 @@ The site is static. Links in the HTML are relative, so the pages work whether Gi
 
 ## Read
 
-- `index.html` — what changed today, then a short preview of the vision, then the revision timeline
+- `index.html` — what changed today, then the vision folded, then Society in ten points in full when the latest edition has it, then the revision timeline
 - `archive/index.html` — every revision, newest first, listed by the change
-- `updates/YYYY-MM-DD/index.html` — that day's change, with the full vision folded underneath
+- `updates/YYYY-MM-DD/index.html` — that day's change, with the full vision folded underneath and, from 2026-10-02, Society in ten points last
 - `updates/updates.json` — the same list, for anything that wants data rather than HTML
 - `vision/current.md` — the latest full vision, regenerated from the newest update
+- `vision/society-ten-points.md` — seed lines to copy into editions dated 2026-10-02 and later
 
 ## Add a weekday update
 
@@ -1166,6 +1294,9 @@ The body uses these sections, in order:
 2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1300 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from bot Pufendorf, bot Popper, and bot Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
+5. `## Society in ten points` — required last section on editions dated 2026-10-02 and later, after Philosophers and after Falsifiers when that section is present. Editions before that date do not include it. The ten labels stay fixed. Start from `vision/society-ten-points.md` and carry the lines forward; rewrite a line only when the vision itself has a material social change, not when the day's news only deepens an already-named path.
+
+`vision/society-ten-points.md` is a source file. The builder checks its labels and does not rewrite it.
 
 Rebuild from the repository root, or from anywhere:
 
@@ -1304,6 +1435,187 @@ def smoke(updates: list[Update]) -> None:
             errors.append("updates.json is not ordered newest first")
         if data["updates"][0]["path"] != latest.slug_path:
             errors.append("updates.json path does not match the latest update")
+        society = society_section(latest)
+        if society is not None:
+            if SOCIETY_TITLE not in index:
+                errors.append("index is missing Society in ten points")
+            if SOCIETY_TITLE not in update_html:
+                errors.append("latest update is missing Society in ten points")
+            for label in SOCIETY_LABELS:
+                strong = f"<strong>{html.escape(label)}</strong>"
+                if strong not in index:
+                    errors.append(f"index is missing bold society label {label}")
+                if strong not in update_html:
+                    errors.append(f"latest update is missing bold society label {label}")
+            details_end = index.find("</details>")
+            society_at = index.find(SOCIETY_TITLE)
+            philosophers_link = index.find("#philosophers")
+            archive_link = index.find('href="archive/"')
+            if not (0 <= details_end < society_at < philosophers_link < archive_link):
+                errors.append(
+                    "index should show Society in ten points after the vision fold "
+                    "and before the philosophers and archive links"
+                )
+            falsifiers_at = update_html.find('id="falsifiers"')
+            society_html_at = update_html.find('id="society-in-ten-points"')
+            source_at = update_html.find('class="source"')
+            if not (0 <= society_html_at < source_at):
+                errors.append("update page should end the article with Society in ten points")
+            if falsifiers_at >= 0 and not (falsifiers_at < society_html_at):
+                errors.append("update page should place Society in ten points after Falsifiers")
+        elif SOCIETY_TITLE in index:
+            errors.append(
+                "index should not invent Society in ten points when the latest edition has none"
+            )
+        for item in updates:
+            page_html = (item.folder / "index.html").read_text(encoding="utf-8")
+            if society_section(item) is None and SOCIETY_TITLE in page_html:
+                errors.append(
+                    f"{item.published.isoformat()}: page includes Society in ten points "
+                    "without that section in the edition"
+                )
+
+    if errors:
+        fail(errors)
+
+
+def _probe(published: date, sections: list[Section]) -> Update:
+    return Update(
+        folder=Path("probe"),
+        published=published,
+        horizon=add_years(published, 10),
+        headline="Probe",
+        summary="Probe",
+        body_md="",
+        sections=sections,
+    )
+
+
+def _core_sections() -> list[Section]:
+    return [
+        Section("What changed today", "- **Set down.** Nothing.", ""),
+        Section("Vision for 2036", "The Union holds.", "## Vision for 2036\n\nThe Union holds."),
+        Section("Philosophers", "- **bot Pufendorf.** Duty.", ""),
+    ]
+
+
+def check_society_seed() -> None:
+    path = ROOT / "vision" / "society-ten-points.md"
+    if not path.is_file():
+        fail([f"missing {path.relative_to(ROOT)}"])
+    text = path.read_text(encoding="utf-8")
+    errors: list[str] = []
+    if "## Society in ten points" not in text:
+        errors.append(f"{path.relative_to(ROOT)}: missing '## Society in ten points'")
+    if SOCIETY_INTRO not in text:
+        errors.append(
+            f"{path.relative_to(ROOT)}: intro does not match the European Union wording"
+        )
+    labels = society_labels(text)
+    if labels != list(SOCIETY_LABELS):
+        found = "; ".join(labels) if labels else "(none)"
+        errors.append(
+            f"{path.relative_to(ROOT)}: seed labels must match the fixed ten; "
+            f"found {len(labels)}: {found}"
+        )
+    if errors:
+        fail(errors)
+
+
+def check_society_gate() -> None:
+    """Lock the 2026-10-02 cutoff and the home/update placement without a live edition."""
+    errors: list[str] = []
+    core = _core_sections()
+
+    def problems(published: date, sections: list[Section]) -> list[str]:
+        return society_problems(_probe(published, sections), Path("probe"))
+
+    if problems(date(2026, 9, 30), core):
+        errors.append("society gate required a section on 2026-09-30")
+    if problems(date(2026, 10, 1), core):
+        errors.append("society gate required a section on 2026-10-01")
+
+    missing = problems(date(2026, 10, 2), core)
+    if not any("missing section" in item for item in missing):
+        errors.append("society gate did not reject a missing section on 2026-10-02")
+
+    short = problems(
+        date(2026, 10, 2),
+        core + [Section(SOCIETY_TITLE, society_body(list(SOCIETY_LABELS[:-1])), "")],
+    )
+    if not any("exactly these 10" in item for item in short):
+        errors.append("society gate did not reject a short list")
+
+    renamed_labels = list(SOCIETY_LABELS)
+    renamed_labels[0] = "Form of the government"
+    renamed = problems(
+        date(2026, 10, 2),
+        core + [Section(SOCIETY_TITLE, society_body(renamed_labels), "")],
+    )
+    if not any("exactly these 10" in item for item in renamed):
+        errors.append("society gate did not reject a changed label")
+
+    extra = problems(
+        date(2026, 10, 2),
+        core + [Section(SOCIETY_TITLE, society_body(list(SOCIETY_LABELS) + ["Extra"]), "")],
+    )
+    if not any("exactly these 10" in item for item in extra):
+        errors.append("society gate did not reject an eleventh point")
+
+    good_sections = core + [
+        Section("Falsifiers", "- A treaty.", ""),
+        Section(SOCIETY_TITLE, society_body(), ""),
+    ]
+    good_errors = problems(date(2026, 10, 2), good_sections)
+    if good_errors:
+        errors.append(f"society gate rejected a valid section: {good_errors}")
+
+    misplaced = problems(
+        date(2026, 10, 2),
+        core
+        + [
+            Section(SOCIETY_TITLE, society_body(), ""),
+            Section("Falsifiers", "- A treaty.", ""),
+        ],
+    )
+    if not any(
+        "must follow Falsifiers" in item or "must be the last section" in item
+        for item in misplaced
+    ):
+        errors.append("society gate did not reject a section placed before Falsifiers")
+
+    html_without = render_index(_probe(date(2026, 9, 30), core))
+    if SOCIETY_TITLE in html_without:
+        errors.append("home invented Society in ten points for an edition that has none")
+    if not (
+        html_without.find("</details>")
+        < html_without.find("#philosophers")
+        < html_without.find('href="archive/"')
+    ):
+        errors.append("home without society should still link philosophers, then the archive")
+
+    html_with = render_index(_probe(date(2026, 10, 2), good_sections))
+    details_end = html_with.find("</details>")
+    society_at = html_with.find(SOCIETY_TITLE)
+    philosophers_link = html_with.find("#philosophers")
+    archive_link = html_with.find('href="archive/"')
+    if not (0 <= details_end < society_at < philosophers_link < archive_link):
+        errors.append(
+            "home should show Society in ten points after the vision fold "
+            "and before the philosophers and archive links"
+        )
+    for label in SOCIETY_LABELS:
+        if f"<strong>{html.escape(label)}</strong>" not in html_with:
+            errors.append(f"home render is missing bold society label {label}")
+
+    update_html = render_update(_probe(date(2026, 10, 2), good_sections), [
+        _probe(date(2026, 10, 2), good_sections)
+    ])
+    falsifiers_at = update_html.find('id="falsifiers"')
+    society_html_at = update_html.find('id="society-in-ten-points"')
+    source_at = update_html.find('class="source"')
+    if not (0 <= falsifiers_at < society_html_at < source_at):
+        errors.append("update page should place Society in ten points after Falsifiers and last")
 
     if errors:
         fail(errors)
@@ -1311,6 +1623,8 @@ def smoke(updates: list[Update]) -> None:
 
 def main() -> None:
     check_calendar()
+    check_society_seed()
+    check_society_gate()
     updates = load_updates()
     clean_stale_pages(updates)
     latest = updates[0]

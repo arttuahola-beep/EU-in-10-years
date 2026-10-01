@@ -10,11 +10,12 @@ The site is static. Links in the HTML are relative, so the pages work whether Gi
 
 ## Read
 
-- `index.html` — what changed today, then a short preview of the vision, then the revision timeline
+- `index.html` — what changed today, then the vision folded, then Society in ten points in full when the latest edition has it, then the revision timeline
 - `archive/index.html` — every revision, newest first, listed by the change
-- `updates/YYYY-MM-DD/index.html` — that day's change, with the full vision folded underneath
+- `updates/YYYY-MM-DD/index.html` — that day's change, with the full vision folded underneath and, from 2026-10-02, Society in ten points last
 - `updates/updates.json` — the same list, for anything that wants data rather than HTML
 - `vision/current.md` — the latest full vision, regenerated from the newest update
+- `vision/society-ten-points.md` — seed lines to copy into editions dated 2026-10-02 and later
 
 ## Add a weekday update
 
@@ -37,6 +38,9 @@ The body uses these sections, in order:
 2. `## Vision for YYYY` — the full living forecast after today's revisions, about 600 to 1300 words, naming the horizon year
 3. `## Philosophers` — brief attributed notes from bot Pufendorf, bot Popper, and bot Socrates
 4. `## Falsifiers` — optional; what evidence would force this vision to be revised
+5. `## Society in ten points` — required last section on editions dated 2026-10-02 and later, after Philosophers and after Falsifiers when that section is present. Editions before that date do not include it. The ten labels stay fixed. Start from `vision/society-ten-points.md` and carry the lines forward; rewrite a line only when the vision itself has a material social change, not when the day's news only deepens an already-named path.
+
+`vision/society-ten-points.md` is a source file. The builder checks its labels and does not rewrite it.
 
 Rebuild from the repository root, or from anywhere:
 
