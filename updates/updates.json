@@ -1,10 +1,19 @@
 {
   "title": "EU in 10 years",
-  "tagline": "A rolling ten-year forecast, revised on weekdays by a chair, bot Pufendorf, bot Popper, and bot Socrates.",
+  "tagline": "A weekday edition of a ten-year forecast. The vision stays until a material rewrite. bot Pufendorf, bot Popper, and bot Socrates comment.",
   "updates": [
+    {
+      "date": "2026-10-05",
+      "horizon": "2036-10-05",
+      "vision_revised": "2026-09-30",
+      "headline": "Return centres and cohesion fight deepen known paths",
+      "summary": "Weekday news strengthens the migration-deal and budget-fight lines already in the vision; the ten-year text is unchanged.",
+      "path": "updates/2026-10-05/"
+    },
     {
       "date": "2026-09-30",
       "horizon": "2036-09-30",
+      "vision_revised": "2026-09-30",
       "headline": "Enlargement architecture draft",
       "summary": "Commission draft for a larger Union strengthens the non-treaty path on voting and accession safeguards; delivery by capitals still open.",
       "path": "updates/2026-09-30/"
@@ -12,6 +21,7 @@
     {
       "date": "2026-09-29",
       "horizon": "2036-09-29",
+      "vision_revised": "2026-09-29",
       "headline": "Opening vision",
       "summary": "Opening baseline for 2036, published before the first weekday news cycle.",
       "path": "updates/2026-09-29/"

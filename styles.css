@@ -163,6 +163,44 @@ time {
   line-height: 1.4;
 }
 
+.pill-revised {
+  background: var(--accent);
+  color: var(--bg);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vision-banner {
+  margin: 0 0 1.15rem;
+  padding: 0.95rem 1rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-size: clamp(1.45rem, 4vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.vision-revised {
+  margin: 1.85rem 0 0.85rem;
+  padding: 0.75rem 0.95rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 2px;
+  background: var(--pill-bg);
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.vision-revised time {
+  color: var(--text);
+  font-size: inherit;
+  font-weight: 700;
+}
+
 .dek {
   margin: 0.2rem 0 2rem;
   color: var(--muted);
