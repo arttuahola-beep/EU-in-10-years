@@ -2,10 +2,18 @@
 date: 2026-10-05
 horizon: 2036-10-05
 vision_revised: 2026-09-30
-headline: "Return centres and cohesion fight deepen known paths"
-summary: "Weekday news strengthens the migration-deal and budget-fight lines already in the vision; the ten-year text is unchanged."
-source: updates/2026-10-05/update.md
+headline: Return centres and cohesion fight deepen known paths
+summary: Weekday news strengthens the migration-deal and budget-fight lines already in the vision; the ten-year text is unchanged.
 ---
+
+## What changed today
+
+- **Strengthened.** On 1 October, ministers adopted the Return Regulation. Failed asylum claimants can be sent to centres outside the EU. That strengthens the migration-deals and neighbourhood-bargains path the vision already names.
+- **Strengthened.** Seventeen "Friends of Cohesion" leaders wrote jointly to protect farm and cohesion money in the 2028–34 budget. That continues the pre-enlargement budget fight the vision already names.
+- **Not moved.** On 1 October the Commission and Ukraine agreed to move ahead with €45 billion for 2027 from the existing Ukraine Support Loan. That is continuity of support money. It does not move the choice between membership and a heavily armed partnership.
+- **Left uncertain.** Defence ministers looked at a proposed emergency plan for hybrid attacks. It is still only a proposal. Reports also say the rearmament plan is behind schedule. That is soft pressure on the defence-posture line. It is not enough to rewrite it.
+
+The ten-year text is carried forward. Vision last revised: 30 September 2026. These stories deepen paths the vision already names. They do not force a rewrite. The pictured horizon moves to 5 October 2036. The claims underneath stay as they were.
 
 ## Vision for 2036
 
@@ -60,3 +68,37 @@ In 2036 the Union is a regulatory power, a large market, and a regional security
 ### How to read this revision
 
 Each claim can be kept, narrowed, or dropped by a later weekday edition. If the page starts to sound like fate, it has failed.
+
+
+## Philosophers
+
+- **bot Pufendorf.** A rule that sends failed claimants to centres outside the Union can sit inside the return covenant the vision already describes. It does not add a duty the text had missed. The cohesion letter is the same kind of fact. Governments are defending farm and cohesion money the budget fight already contains. Neither item rewrites the vision.
+
+- **bot Popper.** These are further instances, not a new conjecture. Return centres deepen a path already named. A joint letter continues a budget fight already named. Loan money for 2027 keeps support in place and leaves the membership fork untouched. A hybrid-attack plan that is still a proposal, and a rearmament plan that is late, dent confidence in delivery. They do not refute the claim that Europe is rearming slowly. Keep the text until a fact breaks a sentence.
+
+- **bot Socrates.** What would have to be false before a rewrite was earned? A return centre is not a new account of who may enter. A letter about farm money is not a new account of the budget. Forty-five billion euros does not say whether Ukraine is a member or a partner. A proposal is not a decision. If the vision changed today, which sentence from 30 September would now be wrong?
+
+## Falsifiers
+
+The tests below still apply to the carried vision. A later edition should rewrite the text if one of them lands.
+
+- Formal presentation and Council rejection of the main decision-making and safeguard proposals, leaving unanimity and accession practice unchanged.
+- Ratification of a treaty rewrite that settles voting and fiscal questions the draft tried to dodge.
+- Completion of several large accessions without meaningful probationary conditionality, or indefinite closure of the Ukraine and Western Balkan tracks despite roadmaps.
+- A lasting break in the United States security role in Europe, or a return to European defence budgets and industry at the thin levels of the early 2020s.
+- Evidence that AI has produced a broad European productivity shift, or that the AI Act’s structure has been abandoned in practice.
+
+## Society in ten points
+
+A compact picture of European Union society at the horizon. The ten labels stay fixed. Rewrite a line only when the vision itself has a material social change — not when the day’s news only deepens an already-named path.
+
+1. **Form of government** — Multi-level Union: Commission, Council, Parliament and Court on the Lisbon skeleton; more bridging and accession safeguards than a full treaty rewrite; member states still hold the hard vetoes on tax, foreign policy and treaties where unanimity remains.
+2. **Social trust** — Trust in the Union varies by country and usually trails attachment to travel, trade, the passport and the currency; national politics is still what most people follow.
+3. **Type of economy** — Large single market with more explicit industrial policy (chips, clean tech, defence production); ageing, defence and energy compete for the same budgets; joint borrowing for named crises, not an ordinary fiscal union.
+4. **Freedom of speech and press** — Broad legal protection with real gaps where governments lean on public media; campaigns run on synthetic media; platform duties and public-service journalism matter more than bans on lies.
+5. **Rule of law** — Court judgments bind, but funding conditions and Article 7-style tools stay slow; some backsliding stopped, less reversed than the treaties suggest; new-member probationary safeguards do not by themselves repair an old member that digs in.
+6. **Political competition** — Competitive elections in most member states; Parliament matters most over money or crisis; national parties and capitals still set the daily agenda.
+7. **Civil society** — Dense and legal in most of the Union; thinner and riskier where governments squeeze NGOs, universities or independent media.
+8. **Demography and social fabric** — Ageing narrows the workforce; income gaps between regions stick even where some close; migration and neighbourhood deals shape who arrives, not only who leaves.
+9. **Information and surveillance** — Strong data-protection and AI Act frames with uneven enforcement; high-risk AI is hard to deploy; digital sovereignty is a bundle of procurement and export rules, not a finished state.
+10. **Security apparatus in society** — No European army; NATO remains the main alliance for most members; the EU does more on money, procurement, mobility and industry while national forces stay the core of coercion.
