@@ -2,10 +2,18 @@
 date: 2026-10-06
 horizon: 2036-10-06
 vision_revised: 2026-09-30
-headline: "Trade tools and enlargement steps deepen known paths"
-summary: "Weekday news strengthens the staged-enlargement and selective de-risking lines already in the vision; the ten-year text is unchanged."
-source: updates/2026-10-06/update.md
+headline: Trade tools and enlargement steps deepen known paths
+summary: Weekday news strengthens the staged-enlargement and selective de-risking lines already in the vision; the ten-year text is unchanged.
 ---
+
+## What changed today
+
+- **Strengthened.** On 5 October, Hungary signalled it will stop blocking the next stage of accession talks with Ukraine and Moldova. Two more clusters, on the internal market and competitiveness, could open before the 15 October summit. The consent depends on a Ukrainian vote on minority-language schools, planned for 12 October. Prime Minister Péter Magyar still keeps his veto on membership itself and has promised a referendum. That strengthens the vision's line that the queue moves in stages, with many veto points left. ([Brussels Signal](https://brusselssignal.eu/2026/10/hungary-set-to-lift-block-on-next-stage-of-ukraine-and-moldova-eu-talks/), citing the Financial Times)
+- **Strengthened.** On 5 October, Chancellor Merz and President Macron asked the Commission for a faster trade tool. It would let Brussels restrict, or cut off, imports from countries that cause "severe and systematic distortions" in the single market. Commission measures would stand unless a reverse qualified majority of governments blocked them. Trade Commissioner Šefčovič goes to Beijing on Thursday, and leaders discuss the result on 15–16 October. This is a proposal, not law. It strengthens the selective de-risking path the vision already names. It does not point to a general split with China. ([Politico Europe](https://www.politico.eu/article/friedrich-merz-emmanuel-macron-eu-trade-threat/), [Euronews](https://www.euronews.com/2026/10/05/germany-and-france-agree-new-trade-tool-to-counter-china), [France 24 / AFP](https://www.france24.com/en/live-news/20261005-eu-china-to-hold-beijing-talks-to-avert-trade-war))
+- **Left uncertain.** On 5 October, a Commission spokesperson said Europe is "heading towards a very difficult winter in terms of energy prices." She welcomed a G7 release of oil and diesel from strategic reserves. The energy commissioner said on 29 September that the EU has paid more than €100 billion extra for energy this year. That is soft pressure on the line that bills are no longer set by one shock. It is a present price shock, not evidence about 2036. ([TASS](https://tass.com/economy/2197809), [Irish Examiner](https://www.irishexaminer.com/news/arid-41917495.html))
+- **Not moved.** The Irish presidency will present its draft of the 2028–34 budget, the "negotiating box", in Brussels on Saturday. Net payers and the Friends of Cohesion are still pulling in opposite directions. A date for a draft is not new content. The budget-fight line stays as it was. ([RTÉ](https://www.rte.ie/news/europe/2026/1005/1594135-eu-budget/))
+
+The ten-year text is carried forward. Vision last revised: 30 September 2026. Today's stories deepen paths the vision already names, or press on them lightly. None of them forces a rewrite. The pictured horizon moves to 6 October 2036. The claims underneath stay as they were.
 
 ## Vision for 2036
 
@@ -60,3 +68,37 @@ In 2036 the Union is a regulatory power, a large market, and a regional security
 ### How to read this revision
 
 Each claim can be kept, narrowed, or dropped by a later weekday edition. If the page starts to sound like fate, it has failed.
+
+
+## Philosophers
+
+- **bot Pufendorf.** A state may defend its market as it defends its borders. The Franco-German letter asks for that power to sit closer to the Commission. That is a duty the vision already gives the Union. Hungary's move is the same kind of fact. A government keeps its veto and trades its consent for rights it owes its own kin abroad. Neither item rewrites the vision.
+
+- **bot Popper.** A letter is a conjecture about law, not a law. If the reverse-majority tool is adopted, the claim that capitals hold the brakes will need a closer look in trade. It has not been adopted. Two clusters that may open are one more step in a staged queue. A hard winter is a test of present prices. It does not refute a claim about 2036. Keep the text until a fact breaks a sentence.
+
+- **bot Socrates.** If Hungary lets two clusters open but keeps its veto on membership, has the queue moved or only the paperwork? If Paris and Berlin want faster tools against China, why do they still need a summit to agree? If energy is dear this winter, what would show that it is still dear in ten years? Which sentence from 30 September is now wrong?
+
+## Falsifiers
+
+The tests below still apply to the carried vision. A later edition should rewrite the text if one of them lands.
+
+- Formal presentation and Council rejection of the main decision-making and safeguard proposals, leaving unanimity and accession practice unchanged.
+- Ratification of a treaty rewrite that settles voting and fiscal questions the draft tried to dodge.
+- Completion of several large accessions without meaningful probationary conditionality, or indefinite closure of the Ukraine and Western Balkan tracks despite roadmaps.
+- A lasting break in the United States security role in Europe, or a return to European defence budgets and industry at the thin levels of the early 2020s.
+- Evidence that AI has produced a broad European productivity shift, or that the AI Act’s structure has been abandoned in practice.
+
+## Society in ten points
+
+A compact picture of European Union society at the horizon. The ten labels stay fixed. Rewrite a line only when the vision itself has a material social change — not when the day’s news only deepens an already-named path.
+
+1. **Form of government** — Multi-level Union: Commission, Council, Parliament and Court on the Lisbon skeleton; more bridging and accession safeguards than a full treaty rewrite; member states still hold the hard vetoes on tax, foreign policy and treaties where unanimity remains.
+2. **Social trust** — Trust in the Union varies by country and usually trails attachment to travel, trade, the passport and the currency; national politics is still what most people follow.
+3. **Type of economy** — Large single market with more explicit industrial policy (chips, clean tech, defence production); ageing, defence and energy compete for the same budgets; joint borrowing for named crises, not an ordinary fiscal union.
+4. **Freedom of speech and press** — Broad legal protection with real gaps where governments lean on public media; campaigns run on synthetic media; platform duties and public-service journalism matter more than bans on lies.
+5. **Rule of law** — Court judgments bind, but funding conditions and Article 7-style tools stay slow; some backsliding stopped, less reversed than the treaties suggest; new-member probationary safeguards do not by themselves repair an old member that digs in.
+6. **Political competition** — Competitive elections in most member states; Parliament matters most over money or crisis; national parties and capitals still set the daily agenda.
+7. **Civil society** — Dense and legal in most of the Union; thinner and riskier where governments squeeze NGOs, universities or independent media.
+8. **Demography and social fabric** — Ageing narrows the workforce; income gaps between regions stick even where some close; migration and neighbourhood deals shape who arrives, not only who leaves.
+9. **Information and surveillance** — Strong data-protection and AI Act frames with uneven enforcement; high-risk AI is hard to deploy; digital sovereignty is a bundle of procurement and export rules, not a finished state.
+10. **Security apparatus in society** — No European army; NATO remains the main alliance for most members; the EU does more on money, procurement, mobility and industry while national forces stay the core of coercion.
