@@ -1,15 +1,15 @@
 ---
-date: 2026-10-07
-horizon: 2036-10-07
+date: 2026-10-08
+horizon: 2036-10-08
 vision_revised: 2026-09-30
-headline: "Enlargement package lands as the budget fight sharpens"
-summary: "New enlargement safeguards and a harder budget fight strengthen paths the vision already names; the ten-year text is unchanged."
-source: updates/2026-10-07/update.md
+headline: "Hungary steps back on Ukraine as China says no on hybrids"
+summary: "A Hungarian step back on Ukraine talks and a record sanctions list strengthen paths the vision already names; the vision is unchanged."
+source: updates/2026-10-08/update.md
 ---
 
 ## Vision for 2036
 
-This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 7 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 8 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
