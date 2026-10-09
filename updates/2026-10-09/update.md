@@ -2,10 +2,18 @@
 date: 2026-10-09
 horizon: 2036-10-09
 vision_revised: 2026-09-30
-headline: "Beijing holds firm on hybrids as budget cuts loom"
-summary: "A smaller draft budget that spares farms and regions, and a US probe of the carbon border tax, strengthen paths the vision already names; the vision is unchanged."
-source: updates/2026-10-09/update.md
+headline: Beijing holds firm on hybrids as budget cuts loom
+summary: A smaller draft budget that spares farms and regions, and a US probe of the carbon border tax, strengthen paths the vision already names; the vision is unchanged.
 ---
+
+## What changed today
+
+- **Left uncertain.** Trade Commissioner Šefčovič opened two days of talks in Beijing on 8 October with Commerce Minister Wang Wentao. Hours before he arrived, China again refused to limit its car exports to Europe of its own accord. The EU now talks about an import cap of its own: a quota of Chinese hybrids on normal terms, and steep duties above it. Diplomats did not expect a deal this week. The talks end today, and leaders review the result on 15–16 October. The vision says de-risking is selective, with no general split. A narrow cap would fit that line. A spiral of tit-for-tat measures would test it. Today the question is still open. ([Politico Europe](https://www.politico.eu/article/china-trade-talks-eu-appetite-tougher-action/), [EUobserver](https://euobserver.com/241842/eu-trade-chief-sefcovic-faces-the-reality-of-brussels-weak-trade-hand/))
+- **Strengthened.** Ireland, which holds the Council presidency, will present its draft of the 2028–2034 budget on Saturday. Twelve EU diplomats told Politico they expect it to cut €100 billion to €200 billion from the nearly €2 trillion plan. Farm and regional money would be largely spared. Development aid and the €410 billion Competitiveness Fund would take more of the cuts. Germany, Austria, the Netherlands and others want deeper savings. Seventeen "Friends of Cohesion" oppose cuts to farms and regions. The vision names agriculture and cohesion as the brakes that matter. It also says ageing, defence and energy draw on the same budgets. A draft that protects the old lines and trims the new ones fits that picture. ([Politico Europe](https://www.politico.eu/article/eu-countries-smaller-budget-proposal/), [RTÉ](https://www.rte.ie/news/europe/2026/1005/1594135-eu-budget/))
+- **Strengthened.** On 8 October, Washington opened an inquiry into the EU's carbon border tax. It will ask whether the tax, and plans to extend it to goods such as washing machines and car parts, harm US trade. US firms have until 9 November to comment. A WTO panel requested by Russia is already looking at the same tax. Inside the EU, governments and Parliament still disagree on which goods to add. The vision says the carbon border adjustment is a normal trade tool, disputed abroad and used at home. It also pictures an Atlantic alliance that quarrels over trade. This story fits both lines. ([Euronews](https://www.euronews.com/2026/10/08/us-probes-eu-carbon-border-tax-over-potential-trade-barriers))
+- **Not moved.** The Council on 8 October extended its sanctions over Russia's hybrid attacks by one year, to 9 October 2027. They cover 80 people and 20 entities, with asset freezes and travel bans. The Council cited continued and stronger Russian interference, including disinformation. The vision already says sanctions and deterrence remain the tools against Russia. A routine renewal adds nothing new. ([Council of the EU](https://www.consilium.europa.eu/en/press/press-releases/2026/10/08/russia-s-hybrid-activities-council-prolongs-restrictive-measures-until-october-2027/))
+
+The vision is unchanged and carried forward. Vision last revised: 30 September 2026. The budget draft is the item to watch. It lands on Saturday, and leaders react next week. None of today's stories forces a rewrite. The pictured horizon moves to 9 October 2036. The claims underneath stay as they were.
 
 ## Vision for 2036
 
@@ -60,3 +68,37 @@ In 2036 the Union is a regulatory power, a large market, and a regional security
 ### How to read this revision
 
 Each claim can be kept, narrowed, or dropped by a later weekday edition. If the page starts to sound like fate, it has failed.
+
+
+## Philosophers
+
+- **bot Pufendorf.** A union owes its poorer regions what it promised them. It also owes its members the defence and research it now says it needs. A budget that keeps the first promise by cutting the second has not settled the duty. It has only put it off. A neighbour may question a tax at the border. It may not demand that the tax be dropped. The text does not need a rewrite.
+
+- **bot Popper.** Politico's figures come from diplomats, not from the draft. Saturday's text can prove them wrong. The Beijing talks end today. A Chinese offer on hybrids would test the claim that Europe must act alone. A US probe is a question, not a tariff. Keep the text until a result breaks a sentence.
+
+- **bot Socrates.** If farms and regions are spared, who pays for the new priorities? If China will not cap its own exports, will Europe cap them, and who pays more for a car? If the carbon tax protects the climate, why do friends and rivals both attack it? Which sentence from 30 September is now wrong?
+
+## Falsifiers
+
+The tests below still apply to the carried vision. A later edition should rewrite the text if one of them lands.
+
+- Formal presentation and Council rejection of the main decision-making and safeguard proposals, leaving unanimity and accession practice unchanged.
+- Ratification of a treaty rewrite that settles voting and fiscal questions the draft tried to dodge.
+- Completion of several large accessions without meaningful probationary conditionality, or indefinite closure of the Ukraine and Western Balkan tracks despite roadmaps.
+- A lasting break in the United States security role in Europe, or a return to European defence budgets and industry at the thin levels of the early 2020s.
+- Evidence that AI has produced a broad European productivity shift, or that the AI Act’s structure has been abandoned in practice.
+
+## Society in ten points
+
+A compact picture of European Union society at the horizon. The ten labels stay fixed. Rewrite a line only when the vision itself has a material social change — not when the day’s news only deepens an already-named path.
+
+1. **Form of government** — Multi-level Union: Commission, Council, Parliament and Court on the Lisbon skeleton; more bridging and accession safeguards than a full treaty rewrite; member states still hold the hard vetoes on tax, foreign policy and treaties where unanimity remains.
+2. **Social trust** — Trust in the Union varies by country and usually trails attachment to travel, trade, the passport and the currency; national politics is still what most people follow.
+3. **Type of economy** — Large single market with more explicit industrial policy (chips, clean tech, defence production); ageing, defence and energy compete for the same budgets; joint borrowing for named crises, not an ordinary fiscal union.
+4. **Freedom of speech and press** — Broad legal protection with real gaps where governments lean on public media; campaigns run on synthetic media; platform duties and public-service journalism matter more than bans on lies.
+5. **Rule of law** — Court judgments bind, but funding conditions and Article 7-style tools stay slow; some backsliding stopped, less reversed than the treaties suggest; new-member probationary safeguards do not by themselves repair an old member that digs in.
+6. **Political competition** — Competitive elections in most member states; Parliament matters most over money or crisis; national parties and capitals still set the daily agenda.
+7. **Civil society** — Dense and legal in most of the Union; thinner and riskier where governments squeeze NGOs, universities or independent media.
+8. **Demography and social fabric** — Ageing narrows the workforce; income gaps between regions stick even where some close; migration and neighbourhood deals shape who arrives, not only who leaves.
+9. **Information and surveillance** — Strong data-protection and AI Act frames with uneven enforcement; high-risk AI is hard to deploy; digital sovereignty is a bundle of procurement and export rules, not a finished state.
+10. **Security apparatus in society** — No European army; NATO remains the main alliance for most members; the EU does more on money, procurement, mobility and industry while national forces stay the core of coercion.
