@@ -1,15 +1,15 @@
 ---
-date: 2026-10-09
-horizon: 2036-10-09
+date: 2026-10-12
+horizon: 2036-10-12
 vision_revised: 2026-09-30
-headline: "Beijing holds firm on hybrids as budget cuts loom"
-summary: "A smaller draft budget that spares farms and regions, and a US probe of the carbon border tax, strengthen paths the vision already names; the vision is unchanged."
-source: updates/2026-10-09/update.md
+headline: "Budget draft spares farms and regions as China agrees hybrid curbs"
+summary: "The Irish draft budget cuts new priorities harder than farms and regions, and a narrow hybrid deal with China fits selective de-risking; the vision is unchanged."
+source: updates/2026-10-12/update.md
 ---
 
 ## Vision for 2036
 
-This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 9 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 12 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
