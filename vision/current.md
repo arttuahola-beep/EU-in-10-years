@@ -1,15 +1,15 @@
 ---
-date: 2026-10-12
-horizon: 2036-10-12
+date: 2026-10-13
+horizon: 2036-10-13
 vision_revised: 2026-09-30
-headline: "Budget draft spares farms and regions as China agrees hybrid curbs"
-summary: "The Irish draft budget cuts new priorities harder than farms and regions, and a narrow hybrid deal with China fits selective de-risking; the vision is unchanged."
-source: updates/2026-10-12/update.md
+headline: "Ukraine and Moldova open two more accession clusters as EU expands Russia listings"
+summary: "Clusters 2 and 3 open for Ukraine and Moldova after Kyiv's minority-school law, Europe adopts its largest Russia listings package, and the vision is unchanged."
+source: updates/2026-10-13/update.md
 ---
 
 ## Vision for 2036
 
-This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 12 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 13 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
