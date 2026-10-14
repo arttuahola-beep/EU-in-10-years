@@ -1,15 +1,15 @@
 ---
-date: 2026-10-13
-horizon: 2036-10-13
+date: 2026-10-14
+horizon: 2036-10-14
 vision_revised: 2026-09-30
-headline: "Ukraine and Moldova open two more accession clusters as EU expands Russia listings"
-summary: "Clusters 2 and 3 open for Ukraine and Moldova after Kyiv's minority-school law, Europe adopts its largest Russia listings package, and the vision is unchanged."
-source: updates/2026-10-13/update.md
+headline: "Hungary gets frozen funds back as Montenegro nears the end of its talks"
+summary: "The Council lifts budget curbs on Hungary after reforms, Montenegro and Albania close more chapters, a reported US–European peace plan stays unconfirmed, and the vision is unchanged."
+source: updates/2026-10-14/update.md
 ---
 
 ## Vision for 2036
 
-This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 13 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 14 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
