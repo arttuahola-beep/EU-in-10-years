@@ -1,15 +1,15 @@
 ---
-date: 2026-10-15
-horizon: 2036-10-15
+date: 2026-10-16
+horizon: 2036-10-16
 vision_revised: 2026-09-30
-headline: "EU pays Ukraine €2.86 billion for air defence as leaders meet on a softer draft"
-summary: "The Commission sends €2.86 billion for drones and air defence, Hungary and Bulgaria trim the accession wording in draft summit conclusions, Starlink limits strain the Atlantic link, and the vision is unchanged."
-source: updates/2026-10-15/update.md
+headline: "Leaders soften Montenegro timelines as Zelensky faces a deeper Atlantic quarrel"
+summary: "Final Day-1 conclusions drop end-year and ASAP language on Montenegro, Ukraine's ASAP draft cut still awaits Day-2 text, MFF talks stay soft-timed, the energy ceasefire collapses into a US–Ukraine fight, and the vision is unchanged."
+source: updates/2026-10-16/update.md
 ---
 
 ## Vision for 2036
 
-This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 15 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This is the living baseline last revised on 30 September 2026, carried forward, not a prophecy. It pictures the European Union on 16 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
