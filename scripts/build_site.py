@@ -1482,6 +1482,15 @@ def local_target(html_path: Path, href: str) -> Path | None:
     return resolved
 
 
+def society_section_follows_vision(html_text: str) -> bool:
+    """The society heading follows the vision fold, even if the day's note names it."""
+    details_end = html_text.find("</details>")
+    society_at = html_text.find('id="society-in-ten-points"')
+    philosophers_link = html_text.find("#philosophers")
+    archive_link = html_text.find('href="archive/"')
+    return 0 <= details_end < society_at < philosophers_link < archive_link
+
+
 def smoke(updates: list[Update]) -> None:
     errors: list[str] = []
     html_files = [
@@ -1625,11 +1634,7 @@ def smoke(updates: list[Update]) -> None:
                     errors.append(f"index is missing bold society label {label}")
                 if strong not in update_html:
                     errors.append(f"latest update is missing bold society label {label}")
-            details_end = index.find("</details>")
-            society_at = index.find(SOCIETY_TITLE)
-            philosophers_link = index.find("#philosophers")
-            archive_link = index.find('href="archive/"')
-            if not (0 <= details_end < society_at < philosophers_link < archive_link):
+            if not society_section_follows_vision(index):
                 errors.append(
                     "index should show Society in ten points after the vision fold "
                     "and before the philosophers and archive links"
@@ -1791,14 +1796,29 @@ def check_society_gate() -> None:
         errors.append("home without society should still link philosophers, then the archive")
 
     html_with = render_index(_probe(date(2026, 10, 2), good_sections))
-    details_end = html_with.find("</details>")
-    society_at = html_with.find(SOCIETY_TITLE)
-    philosophers_link = html_with.find("#philosophers")
-    archive_link = html_with.find('href="archive/"')
-    if not (0 <= details_end < society_at < philosophers_link < archive_link):
+    if not society_section_follows_vision(html_with):
         errors.append(
             "home should show Society in ten points after the vision fold "
             "and before the philosophers and archive links"
+        )
+    # The day's note may name the section. Placement is the heading, not the first mention.
+    named = _probe(
+        date(2026, 10, 19),
+        [
+            Section(
+                "What changed today",
+                f"Three lines in {SOCIETY_TITLE} change to match.",
+                "",
+            ),
+            *_core_sections()[1:],
+            Section("Falsifiers", "- A treaty.", ""),
+            Section(SOCIETY_TITLE, society_body(), ""),
+        ],
+    )
+    if not society_section_follows_vision(render_index(named)):
+        errors.append(
+            "home should keep Society in ten points after the vision fold "
+            "when the day's note names that section"
         )
     for label in SOCIETY_LABELS:
         if f"<strong>{html.escape(label)}</strong>" not in html_with:
