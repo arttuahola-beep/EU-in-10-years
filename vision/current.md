@@ -1,15 +1,15 @@
 ---
-date: 2026-10-19
-horizon: 2036-10-19
+date: 2026-10-20
+horizon: 2036-10-20
 vision_revised: 2026-10-19
-headline: "VISION REVISED: France's unrest and Le Pen's lead bring the home front into the ten-year picture"
-summary: "VISION REVISED — France's worst unrest in years and Marine Le Pen's widening poll lead show the vision was too thin on member-state politics, so it now pictures sovereigntist governments bargaining hard inside the Union; final summit text keeps Ukraine's accession untimed, leaders regret the US diesel waiver, and UK talks do not move the picture."
-source: updates/2026-10-19/update.md
+headline: "France imposes curfews as its borrowing costs jump and Brussels races the 2027 calendar on sanctions"
+summary: "France sets curfews and keeps a state of emergency open as protests spread to Milan and Brussels, French debt sells off, EU officials fear the next Russia sanctions package could be the last before France votes, Europe readies its own channel to Putin, and the vision is unchanged."
+source: updates/2026-10-20/update.md
 ---
 
 ## Vision for 2036
 
-This living baseline was revised on 19 October 2026; it is not a prophecy. It pictures the European Union on 19 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This living baseline, last revised on 19 October 2026, is carried forward, not a prophecy. It pictures the European Union on 20 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
