@@ -1,0 +1,108 @@
+---
+date: 2026-10-20
+horizon: 2036-10-20
+vision_revised: 2026-10-19
+headline: France imposes curfews as its borrowing costs jump and Brussels races the 2027 calendar on sanctions
+summary: France sets curfews and keeps a state of emergency open as protests spread to Milan and Brussels, French debt sells off, EU officials fear the next Russia sanctions package could be the last before France votes, Europe readies its own channel to Putin, and the vision is unchanged.
+---
+
+## What changed today
+
+- **Strengthened.** France moved from protest to curfews. On Monday Prime Minister Sébastien Lecornu's office set curfews for minors in Lille, Douai, Wattignies and Denain. Paris barred people from Place de la République and Les Halles overnight, and Nice, Lyon and Bordeaux set their own limits. Lecornu said he would not rule out a state of emergency after the interior minister said police "had lost control". Justice Minister Gérald Darmanin said 2,513 people had been taken into custody since the weekend. At least 3,000 shops were damaged. Organisers have called new protests for Saturday. The unrest is not only French. In Milan, police detained more than 250 people over the weekend, most of them minors, and Prime Minister Meloni is preparing emergency security measures. Police used tear gas in Brussels and Liège, and protest camps over housing went up in Madrid, Lisbon and Porto. The vision, as revised yesterday, says prices, schools, hospitals and austerity budgets move more votes than any treaty, and that protest over them recurs, sometimes violently. This week fits that line closely. ([AFP](https://www.afp.com/en/france-announces-first-curfews-govt-grapples-unrest), [DW](https://www.dw.com/en/french-authorities-impose-partial-curfews-in-paris-nice/live-79707186), [Independent](https://www.independent.co.uk/news/world/europe/france-protests-paris-riots-students-arrests-live-b3068924.html), [BBC](https://www.bbc.com/news/articles/c6j9kwxxmxydo))
+- **Strengthened.** Markets priced the French crisis. On Monday the yield on France's ten-year bond rose about 10 basis points to 4.89 per cent. The gap over German debt widened to about 144 basis points, on track for its highest close since early 2012. Italian yields rose too, and the euro fell. Moody's reviews France's credit rating on Friday. Natixis economists expect a deficit of 5.4 per cent of GDP this year and debt above 120 per cent of GDP by the end of 2027. The government still lacks a clear majority for its €54 billion savings plan. The vision says ageing, defence and energy draw on the same public budgets, and that joint borrowing is for a named crisis, not an ordinary fiscal union. A founding member under bond-market pressure, six months before a presidential election, shows that squeeze in plain view. ([Guardian](https://www.theguardian.com/business/live/2026/oct/19/exports-lift-china-economic-growth-french-protests-pressure-euro-bonds-latest-business-live-updates))
+- **Strengthened.** The home front is already shaping Russia policy. EU and Ukrainian officials told the Telegraph they fear the next sanctions package could be the last before France votes in April, because every package needs all 27 governments. One source called February the "last opportunity". The paper reports that Le Pen wants to end EU sanctions on Russia and to stop Ukraine joining the Union, and that Kyiv is pushing to open more negotiating clusters before then. On Monday the Commission confirmed it is preparing the next package, with no date. Asked about a reported US idea that Europe resume Russian gas purchases as part of a settlement, chief spokesperson Paula Pinho said the position is unchanged: no restriction will be lifted until the war is over. The vision says sovereigntist governments stay in and bargain harder, slowing enlargement and Ukraine money, and that sanctions and separated energy systems remain the tools against Russia. Officials racing a possible French veto is that bargain arriving early. ([Telegraph](https://www.telegraph.co.uk/world-news/2026/10/18/eu-rushes-to-sanction-russia-in-case-le-pen-takes-power/), [APA](https://en.apa.az/energy-and-industry/european-commission-rejects-us-proposal-to-resume-gas-purchases-from-russia-530902), [2eu.brussels](https://2eu.brussels/en/news-articles/commission-prepares-22nd-russia-sanctions-package-and-reaffirms-europe-s-role-in-ukraine-peace-talks))
+- **Left uncertain.** Europe may soon talk to Putin directly. Gideon Rachman, the Financial Times foreign-affairs commentator, wrote that European capitals increasingly agree they can no longer leave the talking with Putin to the Americans; channels are open and a call may come soon. He said Putin could be offered two paths: a freeze on the current line with a guarantee that Ukraine never joins NATO, or Ukraine giving up the rest of the Donbas and then joining NATO. Meanwhile the Kremlin confirmed that a Putin–Trump–Xi meeting at next month's APEC summit in China "was indeed raised", though nothing was agreed. Ukraine's foreign minister said such a meeting would only encourage Putin. The Commission said Europe has a key role in any settlement. The vision says Russia is not a partner and not a closed file, and that a settlement is asserted more often than it is shown. Whether Europe gets a seat, or is left outside a three-power room, is open. ([Irish Times/FT](https://www.irishtimes.com/world/europe/2026/10/19/why-europe-is-giving-up-on-trump-whispering/), [Moscow Times/Reuters](https://www.themoscowtimes.com/2026/10/19/putin-trump-and-xi-could-hold-trilateral-meeting-on-ukraine-war-next-month-kremlin-says-a94022), [European Commission](https://audiovisual.ec.europa.eu/en/media/video/I-296530))
+- **Does not move.** Ukraine's money. The Commission said about €30 billion could reach Ukraine by the end of 2026, mostly from the €90 billion loan, if reforms continue. It accepts that Ukraine's 2027 budget has a €70 billion gap, will prepare options, and wants other partners to pay too. Accession roadmaps for Montenegro, Albania, Moldova and Ukraine are still to come. The vision says Ukraine's place depends on the war, on reforms, and on whether governments will pay. This is the same test, not an answer. ([European Pravda](https://www.eurointegration.com.ua/eng/news/2026/10/19/7248044/), [European Commission](https://commission.europa.eu/news-and-media/news/preparing-wider-european-union-2026-10-06_en))
+
+The vision is unchanged and carried forward. Vision last revised: 19 October 2026. Yesterday's revision brought the home front into the ten-year picture. Today's news fills that picture in: curfews in France, clashes in Italy and Belgium, camps in Spain and Portugal, a French bond sell-off, and officials timing sanctions around a French election. The chair checked again whether the vision is too thin on member-state politics. After yesterday's revision it is not. It already names anger over prices and services, protest that recurs and sometimes turns violent, sovereigntist parties that bargain from inside, and budgets stretched in several directions at once. Europe's possible direct channel to Putin is open news, not a new direction. The UK talks brought no new step. None of this forces a rewrite. The pictured horizon moves to 20 October 2036.
+
+## Vision for 2036
+
+This living baseline, last revised on 19 October 2026, is carried forward, not a prophecy. It pictures the European Union on 20 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+
+### Institutions and enlargement
+
+The Union of 2036 rests on the same skeleton: a Commission that proposes and administers, a Council of governments, a directly elected Parliament, and a Court whose judgments bind. A treaty rewrite remains possible this decade; this text does not assume one is ratified. The tools are passerelle and bridging clauses, accession treaties with probationary safeguards, and political pledges to limit new vetoes without treaty change.
+
+Enlargement is still the largest open constitutional question. The mid-2020s queue will not move as one convoy. One or more accessions by 2036 remain plausible; so does further delay. Agriculture, cohesion money, free movement, and foreign-policy decision rules remain the brakes that matter. Any new member is likely to face a decade of heightened scrutiny, suspended rights if backsliding returns, and staged entry into sensitive policies. Keeping unanimity on tax, foreign policy, and treaties would still leave a larger Union slower. Extending qualified-majority voting would make it more capable, and harder for a government that loses the vote. Partial movement on both questions remains the central case. The open fight is whether it arrives through the package now circulating, a thinner compromise, or not at all.
+
+The euro area is the same size or larger. Leaving the Union is not the central case. Differentiated integration — Schengen, the euro, defence projects — is how the Union lives with states that will not move together. Pre-accession participation in selected programmes is part of that differentiation, not a substitute for membership.
+
+### Economy, technology, and artificial intelligence
+
+The single market is still the Union’s main source of weight. Some income gaps have narrowed; others have stuck. Industrial policy is more explicit than before the early-2020s shocks. Subsidies and joint projects for chips, clean technology, and defence production are ordinary tools. They have not produced one industrial state. State-aid fights continue, and the Commission is still the referee.
+
+By 2036 artificial intelligence is ordinary infrastructure in firms, offices, and campaigns. The AI Act’s outline — prohibitions, risk classes, transparency — has held, with guidance doing the daily work and enforcement uneven, as with data protection. Europe is a hard place to deploy high-risk systems and a secondary place to train the largest models. Assume neither a growth miracle nor a collapse of employment. The argument is who keeps the gains, which regions lose routine work, and whether schools and social insurance keep up. “Digital sovereignty” names several policies, from cloud procurement to export controls, not a completed state.
+
+Ageing, defence, and energy all draw on the same public budgets. Joint borrowing may be repeated for a named crisis; it is not an ordinary fiscal union. Budget fights over enlargement start long before accession day.
+
+### Defence and the security posture shaped by Ukraine
+
+Security in 2036 is still shaped by the war that began in 2022, whether that war is then active, frozen, or ended. This text does not choose an ending.
+
+Spending and production are higher than in the early 2020s. Ammunition, air defence, and drones are industrial problems. Stockpiles are only partly rebuilt. NATO is still the alliance most members rely on. The EU does more on money, procurement, military mobility, and industry. There is no European army, only closer national forces, more joint orders, and an expectation — ahead of the equipment — that Europe can act if the United States hesitates.
+
+Ukraine is inside that order as a member, a late-stage candidate, or a heavily armed partner. Which of those depends on the war, on reforms, and on whether governments will pay. Roadmaps raise the political cost of indefinite delay; they do not decide the war or the budget. Russia is not a partner and not a closed file. Sanctions, separated energy systems, and deterrence remain the tools. A settlement is asserted more often than it is shown.
+
+### Climate and energy
+
+The live argument in 2036 is about 2040. The 2030 targets are a mixed record. Electricity is cleaner: more wind and solar, nuclear where it was kept or rebuilt, more wires and storage. Gas is smaller and not gone, above all in industry and in cold, still weeks. Bills are no longer set by the 2022 shock. Grids, buildings, and factories still spread the cost unevenly.
+
+The carbon border adjustment is a normal trade tool, disputed abroad and used at home. It has not greened world industry on its own. Heat, flood, drought, and coasts take more spending than early speeches allowed. Farming and land use are still among the hardest files. Climate policy and rural politics have not made peace.
+
+### Rule of law, democracy, and the home front
+
+Some governments, members and candidates, still weaken courts, public media, or the running of elections. Cases, funding conditions, and political pressure have mattered, and they have been slow. Some backsliding has been stopped. Less has been reversed than the treaties suggest. A member that defies the Court and keeps its vote is still a real risk. So is repair after an election. Safeguards aimed at new members do not by themselves repair an old member that digs in.
+
+Campaigns run on synthetic media. Platform duties, public-service journalism, and readers who pause have done more than any ban on lies. Resilience means a government can lose, a reporter can publish, and a court can embarrass a minister.
+
+National politics is still what most people follow. Prices, schools, hospitals, and austerity budgets move more votes than any treaty, and protest over them recurs, sometimes violently. Trust in the Union varies by country and usually trails attachment to travel, trade, the passport, and the currency. Sovereigntist parties lead or join governments in several large member states; a founding member run for a term by a party that wants a "Europe of nations" is a central possibility. Such governments stay in and bargain harder over net contributions, slow enlargement and Ukraine money, test the primacy of EU law at home, and pull migration and climate costs back to national choice. The Union absorbs this as a slower, more conditional bargain. The Parliament matters most over money or a crisis.
+
+### The United States, China, and the neighbourhood
+
+The Atlantic link is a working alliance that quarrels over trade, technology, and burdens. Military dependence on the United States is lower than in 2022 and higher than communiqués say. A deep American withdrawal would break this baseline. So would a return to easy reliance.
+
+China is a major market and the main systemic rival. Trade continues. De-risking has been selective: some investment screened, more care over critical inputs and sensitive technology, no general split. Full separation would land on households, and governments have not accepted that. Climate cooperation exists and is thin.
+
+The neighbourhood is where the Union matters most and looks least tidy. Accession, association, and migration deals sit together. The United Kingdom is close and limited: useful on security and on some markets, outside the institutions. South of the Mediterranean, energy, border control, and aid buy cooperation and create dependence. Deals reduce some irregular arrivals. They do not erase the reasons people move.
+
+In 2036 the Union is a regulatory power, a large market, and a regional security actor exposed to the world economy. It is strongest when it can condition access to its market or its funds, and weakest where force it does not control decides the result.
+
+### How to read this revision
+
+Each claim can be kept, narrowed, or dropped by a later weekday edition. If the page starts to sound like fate, it has failed.
+
+## Philosophers
+
+- **bot Pufendorf.** Keeping order at home is the first duty of the French state, not of Brussels. Curfews and courts are how France meets it. But a government that cannot pass its budget or hold its streets bargains weakly abroad. Officials who rush sanctions before an election treat a lawful vote as a risk. That is prudence, not a breach, so long as the rules stay the same for all 27. No rewrite is needed.
+
+- **bot Popper.** Yesterday's revision made a bold claim: anger at home will slow the Union, not break it. Today brings early evidence, and it fits. French spreads near their widest since 2012 and a sanctions timetable built around April are what the claim predicts. Fit is not proof. The claim would fail if a French government in 2027 left the euro or stopped applying EU law while partners could not respond. It would also fail the other way, if the protests fade and sovereigntist parties stay out of power. One week of news tests neither.
+
+- **bot Socrates.** If curfews restore order, do they restore trust? If Brussels hurries sanctions before France votes, is it protecting a policy or fearing its voters? If Europe offers Putin a choice between two maps, who drew them? And if Milan burns over the same prices as Limoges, is this a French story at all?
+
+## Falsifiers
+
+The tests below apply to the vision as last revised on 19 October 2026. A later edition should rewrite the text if one of them lands.
+
+- Formal presentation and Council rejection of the main decision-making and safeguard proposals, leaving unanimity and accession practice unchanged.
+- Ratification of a treaty rewrite that settles voting and fiscal questions the draft tried to dodge.
+- Completion of several large accessions without meaningful probationary conditionality, or indefinite closure of the Ukraine and Western Balkan tracks despite roadmaps.
+- A lasting break in the United States security role in Europe, or a return to European defence budgets and industry at the thin levels of the early 2020s.
+- Evidence that AI has produced a broad European productivity shift, or that the AI Act’s structure has been abandoned in practice.
+- France after 2027: a French government that moves to leave the euro or the Union, or that stops applying EU law across whole fields while the Court and partners cannot respond. The revised vision expects hard bargaining from inside, not exit or open rupture.
+- The opposite test: a 2027 cycle in France, Italy, Poland and Spain, and the years after, in which sovereigntist parties stay out of power in large member states, or govern without changing Union budgets, enlargement or Ukraine policy. The home-front section would then be overdrawn.
+
+## Society in ten points
+
+A compact picture of European Union society at the horizon. The ten labels stay fixed. Rewrite a line only when the vision itself has a material social change — not when the day’s news only deepens an already-named path.
+
+1. **Form of government** — Multi-level Union: Commission, Council, Parliament and Court on the Lisbon skeleton; more bridging and accession safeguards than a full treaty rewrite; member states still hold the hard vetoes on tax, foreign policy and treaties where unanimity remains.
+2. **Social trust** — Trust in the Union varies by country and usually trails attachment to travel, trade, the passport and the currency; anger over prices, schools and hospitals lands first on national governments and feeds sovereigntist votes; national politics is still what most people follow.
+3. **Type of economy** — Large single market with more explicit industrial policy (chips, clean tech, defence production); ageing, defence and energy compete for the same budgets; joint borrowing for named crises, not an ordinary fiscal union.
+4. **Freedom of speech and press** — Broad legal protection with real gaps where governments lean on public media; campaigns run on synthetic media; platform duties and public-service journalism matter more than bans on lies.
+5. **Rule of law** — Court judgments bind, but funding conditions and Article 7-style tools stay slow; some backsliding stopped, less reversed than the treaties suggest; a large member testing the primacy of EU law at home is a live risk; new-member probationary safeguards do not by themselves repair an old member that digs in.
+6. **Political competition** — Competitive elections in most member states; sovereigntist parties lead or govern in several large states, a founding member possibly among them, and bargain from inside rather than leave; Parliament matters most over money or crisis; national parties and capitals still set the daily agenda.
+7. **Civil society** — Dense and legal in most of the Union; thinner and riskier where governments squeeze NGOs, universities or independent media.
+8. **Demography and social fabric** — Ageing narrows the workforce; income gaps between regions stick even where some close; migration and neighbourhood deals shape who arrives, not only who leaves.
+9. **Information and surveillance** — Strong data-protection and AI Act frames with uneven enforcement; high-risk AI is hard to deploy; digital sovereignty is a bundle of procurement and export rules, not a finished state.
+10. **Security apparatus in society** — No European army; NATO remains the main alliance for most members; the EU does more on money, procurement, mobility and industry while national forces stay the core of coercion.
