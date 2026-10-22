@@ -1,15 +1,15 @@
 ---
-date: 2026-10-21
-horizon: 2036-10-21
+date: 2026-10-22
+horizon: 2036-10-22
 vision_revised: 2026-10-19
-headline: "France delays its budget under curfew as Europe sits in on peace talks in Oslo"
-summary: "France calls in soldiers and delays its budget vote as its borrowing costs stay near a 24-year high, Le Pen's lead holds steady, Europe joins US–Ukraine talks in Oslo, Brussels adds sanctions while Washington waives its own, a new energy bill swells, and the vision is unchanged."
-source: updates/2026-10-21/update.md
+headline: "France's borrowing costs pass 5 per cent and its unions plan a strike as Moscow agrees to talks without Europe in the room"
+summary: "French ten-year borrowing costs pass 5 per cent for the first time since 2002 and unions plan a national strike for 5 November, Moscow agrees to resume three-way talks with Washington and Kyiv, Brussels plans a faster shield against import surges, London and Brussels aim for a food, carbon and youth deal, and the vision is unchanged."
+source: updates/2026-10-22/update.md
 ---
 
 ## Vision for 2036
 
-This living baseline, last revised on 19 October 2026, is carried forward, not a prophecy. It pictures the European Union on 21 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This living baseline, last revised on 19 October 2026, is carried forward, not a prophecy. It pictures the European Union on 22 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
