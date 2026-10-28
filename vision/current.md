@@ -1,29 +1,29 @@
 ---
-date: 2026-10-22
-horizon: 2036-10-22
-vision_revised: 2026-10-19
-headline: "France's borrowing costs pass 5 per cent and its unions plan a strike as Moscow agrees to talks without Europe in the room"
-summary: "French ten-year borrowing costs pass 5 per cent for the first time since 2002 and unions plan a national strike for 5 November, Moscow agrees to resume three-way talks with Washington and Kyiv, Brussels plans a faster shield against import surges, London and Brussels aim for a food, carbon and youth deal, and the vision is unchanged."
-source: updates/2026-10-22/update.md
+date: 2026-10-28
+horizon: 2036-10-28
+vision_revised: 2026-10-28
+headline: "VISION REVISED: Gas at a four-year high and record-low storage put energy dependence back into the ten-year picture"
+summary: "VISION REVISED — European gas prices reach their highest since 2022 with storage at a record low for the season, so the vision now pictures a Union that swapped Russian pipelines for a world gas market it does not control; Moody's spares France while students and unions keep marching, Brussels asks for a seat at November's talks, a new climate-resilience law fits the picture, and the UK summit may drop youth mobility."
+source: updates/2026-10-28/update.md
 ---
 
 ## Vision for 2036
 
-This living baseline, last revised on 19 October 2026, is carried forward, not a prophecy. It pictures the European Union on 22 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This living baseline was revised on 28 October 2026; it is not a prophecy. It pictures the European Union on 28 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
 The Union of 2036 rests on the same skeleton: a Commission that proposes and administers, a Council of governments, a directly elected Parliament, and a Court whose judgments bind. A treaty rewrite remains possible this decade; this text does not assume one is ratified. The tools are passerelle and bridging clauses, accession treaties with probationary safeguards, and political pledges to limit new vetoes without treaty change.
 
-Enlargement is still the largest open constitutional question. The mid-2020s queue will not move as one convoy. One or more accessions by 2036 remain plausible; so does further delay. Agriculture, cohesion money, free movement, and foreign-policy decision rules remain the brakes that matter. Any new member is likely to face a decade of heightened scrutiny, suspended rights if backsliding returns, and staged entry into sensitive policies. Keeping unanimity on tax, foreign policy, and treaties would still leave a larger Union slower. Extending qualified-majority voting would make it more capable, and harder for a government that loses the vote. Partial movement on both questions remains the central case. The open fight is whether it arrives through the package now circulating, a thinner compromise, or not at all.
+Enlargement is the largest open constitutional question. The mid-2020s queue will not move as one convoy. One or more accessions by 2036 remain plausible; so does further delay. Agriculture, cohesion money, free movement, and foreign-policy decision rules remain the brakes that matter. Any new member likely faces a decade of scrutiny, suspended rights if backsliding returns, and staged entry into sensitive policies. Unanimity on tax, foreign policy, and treaties would leave a larger Union slower; more qualified-majority voting would make it more capable, and harder on a government that loses the vote. Partial movement on both remains the central case. The open fight is whether it arrives through the package now circulating, a thinner compromise, or not at all.
 
 The euro area is the same size or larger. Leaving the Union is not the central case. Differentiated integration — Schengen, the euro, defence projects — is how the Union lives with states that will not move together. Pre-accession participation in selected programmes is part of that differentiation, not a substitute for membership.
 
 ### Economy, technology, and artificial intelligence
 
-The single market is still the Union’s main source of weight. Some income gaps have narrowed; others have stuck. Industrial policy is more explicit than before the early-2020s shocks. Subsidies and joint projects for chips, clean technology, and defence production are ordinary tools. They have not produced one industrial state. State-aid fights continue, and the Commission is still the referee.
+The single market is the Union’s main source of weight. Some income gaps have narrowed; others have stuck. Industrial policy is more explicit than before the early-2020s shocks. Subsidies and joint projects for chips, clean technology, and defence production are ordinary tools. They have not produced one industrial state. State-aid fights continue; the Commission referees.
 
-By 2036 artificial intelligence is ordinary infrastructure in firms, offices, and campaigns. The AI Act’s outline — prohibitions, risk classes, transparency — has held, with guidance doing the daily work and enforcement uneven, as with data protection. Europe is a hard place to deploy high-risk systems and a secondary place to train the largest models. Assume neither a growth miracle nor a collapse of employment. The argument is who keeps the gains, which regions lose routine work, and whether schools and social insurance keep up. “Digital sovereignty” names several policies, from cloud procurement to export controls, not a completed state.
+By 2036 artificial intelligence is ordinary infrastructure in firms, offices, and campaigns. The AI Act’s outline — prohibitions, risk classes, transparency — has held, with guidance doing the daily work and enforcement uneven. Europe is a hard place to deploy high-risk systems and a secondary place to train the largest models. Assume neither a growth miracle nor a collapse of employment. The argument is who keeps the gains, which regions lose routine work, and whether schools and social insurance keep up. “Digital sovereignty” names several policies, from cloud procurement to export controls, not a completed state.
 
 Ageing, defence, and energy all draw on the same public budgets. Joint borrowing may be repeated for a named crisis; it is not an ordinary fiscal union. Budget fights over enlargement start long before accession day.
 
@@ -33,17 +33,17 @@ Security in 2036 is still shaped by the war that began in 2022, whether that war
 
 Spending and production are higher than in the early 2020s. Ammunition, air defence, and drones are industrial problems. Stockpiles are only partly rebuilt. NATO is still the alliance most members rely on. The EU does more on money, procurement, military mobility, and industry. There is no European army, only closer national forces, more joint orders, and an expectation — ahead of the equipment — that Europe can act if the United States hesitates.
 
-Ukraine is inside that order as a member, a late-stage candidate, or a heavily armed partner. Which of those depends on the war, on reforms, and on whether governments will pay. Roadmaps raise the political cost of indefinite delay; they do not decide the war or the budget. Russia is not a partner and not a closed file. Sanctions, separated energy systems, and deterrence remain the tools. A settlement is asserted more often than it is shown.
+Ukraine is inside that order as a member, a late-stage candidate, or a heavily armed partner. Which of those depends on the war, on reforms, and on whether governments will pay. Roadmaps raise the cost of delay; they do not decide the war or the budget. Russia is not a partner and not a closed file. Sanctions, separated energy systems, and deterrence remain the tools. A settlement is asserted more often than it is shown.
 
 ### Climate and energy
 
-The live argument in 2036 is about 2040. The 2030 targets are a mixed record. Electricity is cleaner: more wind and solar, nuclear where it was kept or rebuilt, more wires and storage. Gas is smaller and not gone, above all in industry and in cold, still weeks. Bills are no longer set by the 2022 shock. Grids, buildings, and factories still spread the cost unevenly.
+The live argument in 2036 is about 2040. The 2030 targets are a mixed record. Electricity is cleaner: more wind and solar, nuclear where it was kept or rebuilt, more wires and storage. Gas is smaller and not gone, above all in industry and in cold, still weeks. Russian pipelines gave way to world LNG the Union does not control; the Gulf shock from 2026 showed new suppliers are not independence. Bills jump when gas is short; storage and demand cuts are standing policy. Grids, buildings, and factories spread the cost unevenly.
 
-The carbon border adjustment is a normal trade tool, disputed abroad and used at home. It has not greened world industry on its own. Heat, flood, drought, and coasts take more spending than early speeches allowed. Farming and land use are still among the hardest files. Climate policy and rural politics have not made peace.
+The carbon border adjustment is a normal trade tool, disputed abroad and used at home. It has not greened world industry on its own. Heat, flood, drought, and coasts take more spending than early speeches allowed. Farming and land use are among the hardest files. Climate policy and rural politics have not made peace.
 
 ### Rule of law, democracy, and the home front
 
-Some governments, members and candidates, still weaken courts, public media, or the running of elections. Cases, funding conditions, and political pressure have mattered, and they have been slow. Some backsliding has been stopped. Less has been reversed than the treaties suggest. A member that defies the Court and keeps its vote is still a real risk. So is repair after an election. Safeguards aimed at new members do not by themselves repair an old member that digs in.
+Some governments, members and candidates, still weaken courts, public media, or the running of elections. Cases, funding conditions, and pressure have mattered, slowly. Some backsliding has been stopped. Less has been reversed than the treaties suggest. A member that defies the Court and keeps its vote is a real risk. So is repair after an election. Safeguards aimed at new members do not by themselves repair an old member that digs in.
 
 Campaigns run on synthetic media. Platform duties, public-service journalism, and readers who pause have done more than any ban on lies. Resilience means a government can lose, a reporter can publish, and a court can embarrass a minister.
 
@@ -61,4 +61,4 @@ In 2036 the Union is a regulatory power, a large market, and a regional security
 
 ### How to read this revision
 
-Each claim can be kept, narrowed, or dropped by a later weekday edition. If the page starts to sound like fate, it has failed.
+Each claim can be kept, narrowed, or dropped by a later edition. If the page starts to sound like fate, it has failed.
