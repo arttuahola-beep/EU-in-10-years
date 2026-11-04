@@ -1,15 +1,15 @@
 ---
-date: 2026-10-28
-horizon: 2036-10-28
+date: 2026-11-04
+horizon: 2036-11-04
 vision_revised: 2026-10-28
-headline: "VISION REVISED: Gas at a four-year high and record-low storage put energy dependence back into the ten-year picture"
-summary: "VISION REVISED — European gas prices reach their highest since 2022 with storage at a record low for the season, so the vision now pictures a Union that swapped Russian pipelines for a world gas market it does not control; Moody's spares France while students and unions keep marching, Brussels asks for a seat at November's talks, a new climate-resilience law fits the picture, and the UK summit may drop youth mobility."
-source: updates/2026-10-28/update.md
+headline: "France heads into a strike week, Belgium's government wobbles and Moscow rules Europe out of the Abu Dhabi talks"
+summary: "France's tax vote slips as unions and students prepare Thursday's national strike, Belgium's prime minister offers to resign over austerity, Poland's court fight splits president and government, Moscow rules Europe out of the 10–11 November Abu Dhabi talks, gas storage stays at a record low, and the vision is unchanged."
+source: updates/2026-11-04/update.md
 ---
 
 ## Vision for 2036
 
-This living baseline was revised on 28 October 2026; it is not a prophecy. It pictures the European Union on 28 October 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This living baseline, last revised on 28 October 2026, is carried forward, not a prophecy. It pictures the European Union on 4 November 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
