@@ -1,15 +1,15 @@
 ---
-date: 2026-11-04
-horizon: 2036-11-04
+date: 2026-11-11
+horizon: 2036-11-11
 vision_revised: 2026-10-28
-headline: "France heads into a strike week, Belgium's government wobbles and Moscow rules Europe out of the Abu Dhabi talks"
-summary: "France's tax vote slips as unions and students prepare Thursday's national strike, Belgium's prime minister offers to resign over austerity, Poland's court fight splits president and government, Moscow rules Europe out of the 10–11 November Abu Dhabi talks, gas storage stays at a record low, and the vision is unchanged."
-source: updates/2026-11-04/update.md
+headline: "France's budget falls 458 to none, Merz ties the EU budget to Ukraine money and Europe gets a side room in Abu Dhabi"
+summary: "The National Assembly throws out the 2027 budget, the biggest strike day of the autumn wins a 1.6 per cent minimum-wage rise, Merz makes the next EU budget hostage to Ukraine funding, Belgium's king refuses De Wever's resignation, the enlargement package names target years, gas falls while storage keeps falling, and the vision is unchanged."
+source: updates/2026-11-11/update.md
 ---
 
 ## Vision for 2036
 
-This living baseline, last revised on 28 October 2026, is carried forward, not a prophecy. It pictures the European Union on 4 November 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This living baseline, last revised on 28 October 2026, is carried forward, not a prophecy. It pictures the European Union on 11 November 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
