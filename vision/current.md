@@ -1,15 +1,15 @@
 ---
-date: 2026-11-18
-horizon: 2036-11-18
+date: 2026-11-25
+horizon: 2036-11-25
 vision_revised: 2026-10-28
-headline: "Le Pen would stop France's Ukraine money but keep the EU loan, Europe names its negotiators and gas climbs back above €90"
-summary: "Fewer march in France as the Senate takes the budget and Le Pen prices her programme, leaders leave Ukraine money to the late-November summit while Bulgaria steps back, Europe picks a negotiating team that Moscow will not yet seat, Belgium gets another week, Burnham says Brexit has not worked, gas rises again, and the vision is unchanged."
-source: updates/2026-11-18/update.md
+headline: "Costa's budget box pleases no one, Ukraine's €45 billion loan comes with opt-outs and Britain concludes food, carbon and youth deals"
+summary: "Costa cuts €204 billion from the next EU budget and every camp objects, the Commission proposes a €45 billion Ukraine loan that Slovakia will not join, Britain concludes food, carbon and youth deals, Moscow invites Europe to explain itself rather than to the table, gas jumps on a cold forecast with storage near 69 per cent, France's Senate rewrites the budget, Belgium sets a year-end deadline, and the vision is unchanged."
+source: updates/2026-11-25/update.md
 ---
 
 ## Vision for 2036
 
-This living baseline, last revised on 28 October 2026, is carried forward, not a prophecy. It pictures the European Union on 18 November 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
+This living baseline, last revised on 28 October 2026, is carried forward, not a prophecy. It pictures the European Union on 25 November 2036. The horizon moves with the publication date: always ten years on. Nothing here is the necessary path of European history.
 
 ### Institutions and enlargement
 
